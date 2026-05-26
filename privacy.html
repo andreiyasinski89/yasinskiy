@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Политика конфиденциальности — helpstogrow.com</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,300;1,9..144,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream: #F4EFE6;
+    --ink: #18140F;
+    --gold: #C4943A;
+    --ember: #B84E2A;
+    --sand: #E8E0D0;
+    --fog: rgba(24,20,15,0.55);
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+  }
+
+  /* NAV */
+  nav {
+    padding: 20px 56px;
+    display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 1px solid rgba(196,148,58,0.18);
+    background: var(--cream);
+  }
+  .nav-logo {
+    font-family: 'Fraunces', serif;
+    font-size: 1.15rem; font-weight: 500; letter-spacing: -0.02em;
+    color: var(--ink); text-decoration: none;
+  }
+  .nav-logo span { color: var(--ember); }
+  .nav-back {
+    font-size: 0.82rem; letter-spacing: 0.06em;
+    color: var(--fog); text-decoration: none;
+    display: inline-flex; align-items: center; gap: 6px;
+    transition: color 0.25s;
+  }
+  .nav-back:hover { color: var(--ember); }
+  .nav-back::before { content: '←'; }
+
+  /* CONTENT */
+  .page {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 80px 40px 120px;
+  }
+
+  .page-label {
+    font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 16px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .page-label::before { content:''; width:20px; height:1px; background:var(--gold); }
+
+  .page-title {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 500; line-height: 1.1; letter-spacing: -0.03em;
+    margin-bottom: 12px;
+  }
+
+  .page-date {
+    font-size: 0.82rem; color: var(--fog);
+    margin-bottom: 56px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(196,148,58,0.2);
+  }
+
+  .section {
+    margin-bottom: 48px;
+  }
+
+  h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.3rem; font-weight: 500; letter-spacing: -0.02em;
+    margin-bottom: 16px; color: var(--ink);
+    padding-top: 8px;
+  }
+
+  p {
+    font-size: 0.95rem; line-height: 1.85;
+    color: var(--fog); margin-bottom: 16px;
+  }
+
+  ul {
+    list-style: none; margin-bottom: 16px;
+  }
+  ul li {
+    font-size: 0.95rem; line-height: 1.85; color: var(--fog);
+    padding: 5px 0 5px 20px; position: relative;
+  }
+  ul li::before {
+    content: '—'; position: absolute; left: 0;
+    color: var(--gold);
+  }
+
+  .highlight {
+    background: var(--sand);
+    padding: 24px 28px;
+    border-left: 3px solid var(--gold);
+    margin-bottom: 16px;
+  }
+  .highlight p { margin: 0; color: var(--ink); font-weight: 400; }
+
+  a { color: var(--ember); text-decoration: underline; text-underline-offset: 2px; }
+  a:hover { color: var(--ink); }
+
+  /* FOOTER */
+  footer {
+    padding: 32px 56px;
+    background: var(--ink); color: rgba(244,239,230,0.35);
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 0.78rem;
+  }
+  .footer-logo {
+    font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 500;
+    color: var(--cream); text-decoration: none;
+  }
+  .footer-logo span { color: var(--gold); }
+
+  @media (max-width: 768px) {
+    nav { padding: 16px 24px; }
+    .page { padding: 48px 24px 80px; }
+    footer { padding: 24px; flex-direction: column; gap: 12px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Андрей Ясинский <span>·</span> ДНК бизнеса</a>
+  <a href="index.html" class="nav-back">Вернуться на сайт</a>
+</nav>
+
+<div class="page">
+
+  <div class="page-label">Юридические документы</div>
+  <h1 class="page-title">Политика конфиденциальности</h1>
+  <p class="page-date">Последнее обновление: 27 мая 2026 года</p>
+
+  <div class="section">
+    <div class="highlight">
+      <p>Настоящая Политика конфиденциальности описывает, как Андрей Ясинский (далее — «Оператор», «я», «мы»), действующий через сайт <strong>helpstogrow.com</strong>, собирает, использует и защищает персональные данные пользователей в соответствии с Общим регламентом о защите данных (GDPR, Регламент ЕС 2016/679).</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>1. Кто является оператором данных</h2>
+    <p>Оператором персональных данных является:</p>
+    <ul>
+      <li><strong>Имя:</strong> Андрей Ясинский</li>
+      <li><strong>Сайт:</strong> helpstogrow.com</li>
+      <li><strong>Email для запросов по данным:</strong> contact@helpstogrow.com</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>2. Какие данные мы собираем</h2>
+    <p>При заполнении формы обратной связи на сайте мы собираем следующие данные:</p>
+    <ul>
+      <li>Имя</li>
+      <li>Контактные данные: номер телефона, Telegram или WhatsApp</li>
+      <li>Интересующий формат работы</li>
+      <li>Информацию о вашем бизнесе и запросе (если вы её указали)</li>
+    </ul>
+    <p>Мы не собираем специальные категории данных (расовое или этническое происхождение, политические взгляды, состояние здоровья и т.д.).</p>
+  </div>
+
+  <div class="section">
+    <h2>3. Для чего используются данные</h2>
+    <p>Собранные данные используются исключительно для:</p>
+    <ul>
+      <li>Ответа на вашу заявку и организации первичного звонка</li>
+      <li>Согласования условий и формата сотрудничества</li>
+      <li>Направления информации о программах наставничества (только с вашего согласия)</li>
+    </ul>
+    <p>Мы не используем ваши данные для автоматического принятия решений или профилирования.</p>
+  </div>
+
+  <div class="section">
+    <h2>4. Правовое основание обработки</h2>
+    <p>Обработка персональных данных осуществляется на основании:</p>
+    <ul>
+      <li><strong>Согласия</strong> — вы явно даёте согласие при отправке формы (ст. 6(1)(a) GDPR)</li>
+      <li><strong>Преддоговорных мер</strong> — для ответа на ваш запрос о сотрудничестве (ст. 6(1)(b) GDPR)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>5. Передача данных третьим лицам</h2>
+    <p>Для обработки форм обратной связи используется сервис <strong>Formspree</strong> (Formspree, Inc., США). Сервис обрабатывает данные в соответствии со своей политикой конфиденциальности и соблюдает требования GDPR.</p>
+    <p>Мы не продаём, не передаём и не раскрываем ваши данные третьим лицам в каких-либо иных целях.</p>
+  </div>
+
+  <div class="section">
+    <h2>6. Срок хранения данных</h2>
+    <p>Данные из формы обратной связи хранятся не дольше, чем это необходимо для достижения цели их сбора:</p>
+    <ul>
+      <li>Данные потенциальных клиентов, с которыми не началось сотрудничество — до <strong>6 месяцев</strong></li>
+      <li>Данные действующих и бывших клиентов — в течение срока сотрудничества и <strong>3 лет</strong> после его окончания</li>
+    </ul>
+    <p>По истечении указанного срока данные безвозвратно удаляются.</p>
+  </div>
+
+  <div class="section">
+    <h2>7. Ваши права по GDPR</h2>
+    <p>В соответствии с GDPR вы имеете следующие права:</p>
+    <ul>
+      <li><strong>Право на доступ</strong> — запросить копию ваших данных, которые мы храним</li>
+      <li><strong>Право на исправление</strong> — потребовать исправления неточных данных</li>
+      <li><strong>Право на удаление</strong> («право быть забытым») — потребовать удаления ваших данных</li>
+      <li><strong>Право на ограничение обработки</strong> — ограничить использование ваших данных</li>
+      <li><strong>Право на переносимость</strong> — получить ваши данные в машиночитаемом формате</li>
+      <li><strong>Право на отзыв согласия</strong> — отозвать согласие в любой момент без ущерба для себя</li>
+      <li><strong>Право на жалобу</strong> — подать жалобу в надзорный орган по защите данных вашей страны</li>
+    </ul>
+    <p>Для реализации любого из этих прав напишите нам на: <a href="mailto:contact@helpstogrow.com">contact@helpstogrow.com</a>. Мы ответим в течение 30 дней.</p>
+  </div>
+
+  <div class="section">
+    <h2>8. Файлы cookie</h2>
+    <p>В настоящее время сайт не использует аналитические или маркетинговые файлы cookie. Используются только технически необходимые файлы cookie для корректной работы сайта.</p>
+    <p>При подключении аналитических инструментов (например, Google Analytics) настоящая политика будет обновлена, а на сайте появится баннер согласия на использование cookie.</p>
+  </div>
+
+  <div class="section">
+    <h2>9. Безопасность данных</h2>
+    <p>Мы принимаем разумные технические и организационные меры для защиты ваших данных от несанкционированного доступа, изменения, раскрытия или уничтожения. Сайт использует протокол HTTPS для шифрования передаваемых данных.</p>
+  </div>
+
+  <div class="section">
+    <h2>10. Изменения в политике</h2>
+    <p>Мы оставляем за собой право обновлять настоящую Политику конфиденциальности. При внесении существенных изменений дата последнего обновления в начале документа будет изменена. Рекомендуем периодически проверять эту страницу.</p>
+  </div>
+
+  <div class="section">
+    <h2>11. Контакты</h2>
+    <p>Если у вас есть вопросы или запросы относительно обработки ваших персональных данных, свяжитесь с нами:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:contact@helpstogrow.com">contact@helpstogrow.com</a></li>
+      <li><strong>Сайт:</strong> <a href="https://helpstogrow.com">helpstogrow.com</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  <a href="index.html" class="footer-logo">Андрей Ясинский <span>·</span> ДНК бизнеса</a>
+  <span>© 2026 helpstogrow.com</span>
+</footer>
+
+</body>
+</html>
