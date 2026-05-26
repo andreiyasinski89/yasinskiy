@@ -517,6 +517,10 @@
 
   .testi-grid {
     display: grid; grid-template-columns: 1.6fr 1fr; gap: 24px;
+    margin-bottom: 24px;
+  }
+  .testi-grid-bottom {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
   }
   .testi-card {
     padding: 52px; background: var(--sand);
@@ -730,6 +734,7 @@
 
     .testimonials { padding: 80px 24px; }
     .testi-grid { grid-template-columns: 1fr; }
+    .testi-grid-bottom { grid-template-columns: 1fr; }
 
     .cta { grid-template-columns: 1fr; padding: 80px 24px; gap: 48px; }
     footer { flex-direction: column; gap: 20px; padding: 36px 24px; text-align: center; }
@@ -785,101 +790,9 @@
     .footer-links { gap: 12px; }
     .footer-links a { font-size: 0.76rem; }
   }
-
-  /* ─── COOKIE BANNER ─── */
-  .cookie-banner {
-    position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999;
-    background: var(--ink); color: var(--cream);
-    padding: 24px 48px;
-    display: flex; align-items: center; justify-content: space-between; gap: 32px;
-    border-top: 2px solid var(--gold);
-    transform: translateY(100%);
-    transition: transform 0.5s ease;
-    box-shadow: 0 -8px 40px rgba(0,0,0,0.25);
-  }
-  .cookie-banner.visible { transform: translateY(0); }
-  .cookie-banner p {
-    font-size: 0.85rem; line-height: 1.7;
-    color: rgba(244,239,230,0.75); margin: 0; max-width: 680px;
-  }
-  .cookie-banner p a {
-    color: var(--gold); text-decoration: underline;
-    text-underline-offset: 2px;
-  }
-  .cookie-banner p a:hover { color: var(--cream); }
-  .cookie-btns {
-    display: flex; gap: 10px; flex-shrink: 0;
-  }
-  .cookie-btn-accept {
-    background: var(--gold); color: var(--ink);
-    border: none; padding: 12px 24px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.82rem; font-weight: 500;
-    letter-spacing: 0.06em; text-transform: uppercase;
-    cursor: pointer; transition: background 0.3s;
-    white-space: nowrap;
-  }
-  .cookie-btn-accept:hover { background: var(--ember); color: var(--cream); }
-  .cookie-btn-decline {
-    background: transparent; color: rgba(244,239,230,0.5);
-    border: 1px solid rgba(244,239,230,0.2);
-    padding: 12px 24px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.82rem; letter-spacing: 0.06em; text-transform: uppercase;
-    cursor: pointer; transition: all 0.3s;
-    white-space: nowrap;
-  }
-  .cookie-btn-decline:hover {
-    border-color: rgba(244,239,230,0.5);
-    color: rgba(244,239,230,0.8);
-  }
-
-  @media (max-width: 768px) {
-    .cookie-banner {
-      flex-direction: column; align-items: flex-start;
-      padding: 20px 20px 28px;
-      gap: 16px;
-    }
-    .cookie-btns { width: 100%; }
-    .cookie-btn-accept, .cookie-btn-decline {
-      flex: 1; text-align: center;
-    }
-  }
 </style>
 </head>
 <body>
-
-<!-- GOOGLE ANALYTICS — loads only after cookie consent -->
-<script>
-  window.GA_ID = 'G-0R35HSGC16';
-  function loadGA() {
-    if (window.gaLoaded) return;
-    window.gaLoaded = true;
-    var s = document.createElement('script');
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA_ID;
-    s.async = true;
-    document.head.appendChild(s);
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    window.gtag = gtag;
-    gtag('js', new Date());
-    gtag('config', window.GA_ID, { anonymize_ip: true });
-  }
-  // Auto-load if already consented
-  if (localStorage.getItem('cookie_consent') === 'accepted') { loadGA(); }
-</script>
-
-<!-- COOKIE BANNER -->
-<div class="cookie-banner" id="cookieBanner">
-  <p>
-    Мы используем файлы cookie для анализа трафика и улучшения сайта (Google Analytics).
-    Данные анонимизированы. Подробнее в <a href="privacy.html" target="_blank">Политике конфиденциальности</a>.
-  </p>
-  <div class="cookie-btns">
-    <button class="cookie-btn-decline" id="cookieDecline">Отклонить</button>
-    <button class="cookie-btn-accept" id="cookieAccept">Принять</button>
-  </div>
-</div>
 
 <!-- NAV -->
 <nav>
@@ -1298,50 +1211,83 @@
 <!-- TESTIMONIALS -->
 <section class="testimonials" id="reviews">
   <div class="testi-header">
-    <div class="section-label reveal visible">Результаты клиентов</div>
-    <h2 class="testi-title reveal visible">
+    <div class="section-label reveal">Результаты клиентов</div>
+    <h2 class="testi-title reveal">
       Бизнес, который<br>
       <em>работает иначе</em>
     </h2>
   </div>
+
+  <!-- Row 1: featured + side -->
   <div class="testi-grid">
-    <div class="testi-card dark reveal visible">
+    <div class="testi-card dark reveal">
       <span class="testi-mark">"</span>
-      <p class="testi-text">Пришёл с ощущением, что бегу по кругу — много работы, мало денег, нет времени ни на что. После трёх месяцев наставничества выстроили систему, нанял двух ключевых людей и первый раз за четыре года взял нормальный отпуск. Бизнес не упал.</p>
-      <div class="testi-result">Выручка выросла на 140% за 6 месяцев</div>
+      <p class="testi-text">Три года строил IT-продукт и параллельно тушил пожары в операционке. Каждый день — в задачах, но бизнес не рос. После наставничества выстроили структуру команды, прописали зоны ответственности, внедрили еженедельные спринты. Через четыре месяца я впервые работал над стратегией, а не над тем, кто заболел и кто не сдал задачу.</p>
+      <div class="testi-result">Команда выросла с 4 до 11 человек без хаоса</div>
       <div class="testi-author">
-        <div class="testi-av">МД</div>
+        <div class="testi-av">ДК</div>
         <div>
-          <div class="testi-name">Михаил Дорохов</div>
-          <div class="testi-role">Основатель производственной компании, Екатеринбург</div>
+          <div class="testi-name">Дмитрий</div>
+          <div class="testi-role">CEO, SaaS-стартап</div>
         </div>
       </div>
     </div>
     <div class="testi-col">
-      <div class="testi-card reveal visible">
+      <div class="testi-card reveal">
         <span class="testi-mark">"</span>
-        <p class="testi-text">Один разбор бизнеса — и я поняла, где теряла деньги последние два года. Решение оказалось простым, просто не видела его изнутри.</p>
+        <p class="testi-text">У меня была сеть из трёх салонов красоты и полное ощущение, что я работаю на бизнес, а не он на меня. Андрей помог найти узкое место — проблема оказалась не в администраторах, а в том, как выстроена запись и повторные визиты. Переделали процесс — возврат клиентов вырос на 35%.</p>
+        <div class="testi-result">Возврат клиентов +35% за 2 месяца</div>
         <div class="testi-author">
-          <div class="testi-av">АС</div>
+          <div class="testi-av">МВ</div>
           <div>
-            <div class="testi-name">Анна Соловьёва</div>
-            <div class="testi-role">Предприниматель, e-commerce</div>
-          </div>
-        </div>
-      </div>
-      <div class="testi-card reveal visible">
-        <span class="testi-mark">"</span>
-        <p class="testi-text">Работа над состоянием дала больше, чем я ожидал. Когда изменился я — изменились переговоры, команда, партнёры. Бизнес — это зеркало собственника.</p>
-        <div class="testi-author">
-          <div class="testi-av">РК</div>
-          <div>
-            <div class="testi-name">Ринат Калимов</div>
-            <div class="testi-role">Владелец сети кофеен, Казань</div>
+            <div class="testi-name">Мария</div>
+            <div class="testi-role">Владелец сети салонов красоты</div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Row 2: three cards -->
+  <div class="testi-grid-bottom">
+    <div class="testi-card reveal">
+      <span class="testi-mark">"</span>
+      <p class="testi-text">Открыл кафе два года назад — всё держалось на мне лично. Любая смена без меня — стресс. После работы с Андреем прописали стандарты, обучили двух управляющих, сделали чек-листы на каждую смену. Сейчас уезжаю на две недели — и всё работает.</p>
+      <div class="testi-result">Первый отпуск за 2 года без звонков</div>
+      <div class="testi-author">
+        <div class="testi-av">ТМ</div>
+        <div>
+          <div class="testi-name">Тимур</div>
+          <div class="testi-role">Владелец кафе</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card reveal">
+      <span class="testi-mark">"</span>
+      <p class="testi-text">Пришла на разбор бизнеса с одним вопросом — почему при хорошей выручке всегда не хватает денег. За две часа разобрались с unit-экономикой, нашли три позиции в меню которые работали в минус, и поняли где реально маржа. Окупила сессию в первый же месяц.</p>
+      <div class="testi-result">Нашла убыточные позиции, маржа +18%</div>
+      <div class="testi-author">
+        <div class="testi-av">СЛ</div>
+        <div>
+          <div class="testi-name">София</div>
+          <div class="testi-role">Владелец ресторана</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card dark reveal">
+      <span class="testi-mark">"</span>
+      <p class="testi-text">Работал с Андреем над состоянием и переговорами. Звучит абстрактно — но результат конкретный. Закрыл партнёрство, которое тянул два года и боялся разорвать. Подписал контракт с клиентом вдвое крупнее тех, с кем работал раньше. Оказалось, дело было не в навыках — а в том, как я себя подаю.</p>
+      <div class="testi-result">Закрыл контракт в 2× больше предыдущего максимума</div>
+      <div class="testi-author">
+        <div class="testi-av">АВ</div>
+        <div>
+          <div class="testi-name">Алексей</div>
+          <div class="testi-role">Основатель digital-агентства</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <!-- CTA -->
@@ -1398,25 +1344,6 @@
 </footer>
 
 <script>
-  // Cookie banner
-  (function() {
-    var consent = localStorage.getItem('cookie_consent');
-    if (!consent) {
-      setTimeout(function() {
-        document.getElementById('cookieBanner').classList.add('visible');
-      }, 1500);
-    }
-    document.getElementById('cookieAccept').addEventListener('click', function() {
-      localStorage.setItem('cookie_consent', 'accepted');
-      document.getElementById('cookieBanner').classList.remove('visible');
-      loadGA();
-    });
-    document.getElementById('cookieDecline').addEventListener('click', function() {
-      localStorage.setItem('cookie_consent', 'declined');
-      document.getElementById('cookieBanner').classList.remove('visible');
-    });
-  })();
-
   // Burger menu
   const burger = document.getElementById('burger');
   const mobileMenu = document.getElementById('mobileMenu');
