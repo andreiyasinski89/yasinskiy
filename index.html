@@ -648,29 +648,142 @@
   }
 
   /* ─── MOBILE ─── */
+  /* ─── BURGER MENU ─── */
+  .burger {
+    display: none;
+    flex-direction: column; gap: 5px;
+    cursor: pointer; padding: 4px; background: none; border: none;
+  }
+  .burger span {
+    display: block; width: 24px; height: 2px;
+    background: var(--ink); transition: all 0.3s ease;
+    transform-origin: center;
+  }
+  .burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .burger.open span:nth-child(2) { opacity: 0; }
+  .burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .mobile-menu {
+    display: none;
+    position: fixed; top: 60px; left: 0; right: 0; bottom: 0;
+    background: rgba(244,239,230,0.98);
+    backdrop-filter: blur(16px);
+    z-index: 99;
+    flex-direction: column;
+    justify-content: center; align-items: center;
+    gap: 8px;
+    padding: 40px 24px;
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(1.8rem, 7vw, 2.4rem);
+    font-weight: 500; letter-spacing: -0.02em;
+    color: var(--ink); text-decoration: none;
+    padding: 12px 0;
+    transition: color 0.25s;
+    text-align: center;
+  }
+  .mobile-menu a:hover { color: var(--ember); }
+  .mobile-menu .mobile-cta {
+    margin-top: 24px;
+    background: var(--ink); color: var(--cream);
+    padding: 16px 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.88rem; letter-spacing: 0.08em; text-transform: uppercase;
+    font-weight: 400;
+  }
+  .mobile-menu .mobile-cta:hover { background: var(--ember); color: var(--cream); }
+
+  /* ─── TABLET 960px ─── */
   @media (max-width: 960px) {
     nav { padding: 16px 24px; }
     .nav-links, .nav-cta { display: none; }
-    .hero { grid-template-columns: 1fr; }
-    .hero-left { padding: 60px 24px; }
-    .hero-right { height: 260px; }
+    .burger { display: flex; }
+
+    .hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero-left { padding: 72px 24px 48px; }
+    .hero-right { height: 320px; }
+    .hero-stats { grid-template-columns: repeat(3,1fr); bottom: 24px; left: 16px; right: 16px; }
+    .hero-stat { padding: 16px 12px; }
+    .hero-stat-num { font-size: 1.6rem; }
+    .hero-stat-label { font-size: 0.65rem; }
+    .hero-quote { bottom: 40px; left: 24px; right: 24px; padding: 20px 24px; }
+
     .pillars { padding: 80px 24px; }
     .pillars-grid { grid-template-columns: 1fr; }
+
     .services { padding: 80px 24px; }
     .services-header { grid-template-columns: 1fr; gap: 24px; }
-    .services-grid { grid-template-columns: 1fr; }
+    .services-grid { grid-template-columns: 1fr 1fr; }
+
     .about { grid-template-columns: 1fr; padding: 80px 24px; gap: 48px; }
     .about-sticky { position: static; }
+
     .process { padding: 80px 24px; }
     .process-header { grid-template-columns: 1fr; gap: 24px; }
     .process-step { grid-template-columns: 60px 1fr; padding: 28px 24px; }
     .step-tag { display: none; }
+
     .programs { padding: 80px 24px; }
     .programs-grid { grid-template-columns: 1fr; }
+
     .testimonials { padding: 80px 24px; }
     .testi-grid { grid-template-columns: 1fr; }
+
     .cta { grid-template-columns: 1fr; padding: 80px 24px; gap: 48px; }
     footer { flex-direction: column; gap: 20px; padding: 36px 24px; text-align: center; }
+    .footer-links { flex-wrap: wrap; justify-content: center; gap: 16px; }
+  }
+
+  /* ─── MOBILE 480px ─── */
+  @media (max-width: 480px) {
+    nav { padding: 14px 20px; }
+
+    .hero-left { padding: 64px 20px 40px; }
+    .hero-pills { gap: 8px; }
+    .pill { font-size: 0.72rem; padding: 6px 12px; }
+    .hero-btns { flex-direction: column; align-items: flex-start; gap: 16px; }
+    .btn-primary { width: 100%; text-align: center; padding: 16px; }
+    .hero-right { height: 260px; }
+    .hero-stats { grid-template-columns: repeat(3,1fr); }
+    .hero-stat-num { font-size: 1.3rem; }
+
+    .pillars { padding: 64px 20px; }
+    .pillar { padding: 36px 28px; }
+
+    .services { padding: 64px 20px; }
+    .services-grid { grid-template-columns: 1fr; }
+    .svc { padding: 32px 24px; }
+
+    .about { padding: 64px 20px; gap: 40px; }
+    .about-quote { padding: 20px 20px; font-size: 1rem; }
+    .win-row { padding: 16px 18px; gap: 14px; }
+    .win-num { font-size: 1.4rem; width: 52px; }
+
+    .process { padding: 64px 20px; }
+    .process-step { grid-template-columns: 48px 1fr; gap: 16px; padding: 24px 20px; }
+    .step-n { font-size: 2.2rem; }
+    .step-body h4 { font-size: 1rem; }
+
+    .programs { padding: 64px 20px; }
+    .prog-card { padding: 36px 28px; }
+    .prog-num { font-size: 3.5rem; }
+
+    .testimonials { padding: 64px 20px; }
+    .testi-card { padding: 36px 28px; }
+    .testi-text { font-size: 1rem; }
+
+    .cta { padding: 64px 20px; }
+    .cta-title { font-size: 2.8rem; }
+    .form-field input,
+    .form-field select,
+    .form-field textarea { font-size: 0.88rem; padding: 14px 16px; }
+    .btn-submit { padding: 16px; font-size: 0.82rem; }
+
+    footer { padding: 28px 20px; }
+    .footer-links { gap: 12px; }
+    .footer-links a { font-size: 0.76rem; }
   }
 </style>
 </head>
@@ -688,7 +801,21 @@
     <li><a href="#reviews">Отзывы</a></li>
   </ul>
   <a href="#contact" class="nav-cta">Заказать разбор</a>
+  <button class="burger" id="burger" aria-label="Меню">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#pillars" class="mobile-link">Экспертиза</a>
+  <a href="#services" class="mobile-link">Услуги</a>
+  <a href="#about" class="mobile-link">Обо мне</a>
+  <a href="#process" class="mobile-link">Процесс</a>
+  <a href="#programs" class="mobile-link">Программы</a>
+  <a href="#reviews" class="mobile-link">Отзывы</a>
+  <a href="#contact" class="mobile-cta mobile-link">Заказать разбор</a>
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -1179,6 +1306,22 @@
 </footer>
 
 <script>
+  // Burger menu
+  const burger = document.getElementById('burger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+    document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+  });
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => {
+      burger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+
   // Scroll reveal
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
