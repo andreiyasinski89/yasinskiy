@@ -1,0 +1,9 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" rx="16" fill="#18140F"/>
+  <circle cx="16" cy="16" r="14" fill="rgba(196,148,58,0.07)" stroke="#C4943A" stroke-width="0.9"/>
+  <circle cx="16" cy="16" r="11.5" fill="none" stroke="rgba(196,148,58,0.2)" stroke-width="0.5"/>
+  <line x1="16" y1="2" x2="16" y2="5.5" stroke="#C4943A" stroke-width="0.9" stroke-linecap="round"/>
+  <line x1="16" y1="26.5" x2="16" y2="30" stroke="#C4943A" stroke-width="0.9" stroke-linecap="round"/>
+  <circle cx="16" cy="2" r="1.2" fill="#C4943A"/>
+  <text font-family="Georgia, serif" font-size="10" font-weight="400" fill="#C4943A" text-anchor="middle" x="16" y="20" letter-spacing="0.08em">HTG</text>
+</svg>

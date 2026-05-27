@@ -2,6 +2,8 @@
 <html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
 <title>Движок Твоего Бизнеса — Наставник для предпринимателей</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,300;1,9..144,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <style>
@@ -37,10 +39,28 @@
   }
   .nav-logo {
     font-family: 'Fraunces', serif;
-    font-size: 1.15rem; font-weight: 500; letter-spacing: -0.02em;
+    font-size: 1.05rem; font-weight: 500; letter-spacing: -0.02em;
     color: var(--ink); text-decoration: none;
+    display: inline-flex; align-items: center; gap: 12px;
+    text-decoration: none;
   }
   .nav-logo span { color: var(--ember); }
+  .nav-logo-icon {
+    width: 54px; height: 54px; flex-shrink: 0;
+    transition: transform 0.3s ease;
+  }
+  .nav-logo:hover .nav-logo-icon { transform: rotate(10deg); }
+  .nav-logo-text { display: flex; flex-direction: column; gap: 6px; }
+  .nav-logo-name {
+    font-family: 'Fraunces', serif;
+    font-size: 1rem; font-weight: 500; letter-spacing: -0.02em;
+    color: var(--ink); line-height: 1;
+  }
+  .nav-logo-sub {
+    font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--gold); line-height: 1; font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+  }
   .nav-links { display: flex; gap: 36px; list-style: none; }
   .nav-links a {
     font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
@@ -635,8 +655,10 @@
   .footer-logo {
     font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 500;
     color: var(--cream); text-decoration: none;
+    display: inline-flex; align-items: center; gap: 12px;
   }
   .footer-logo span { color: var(--gold); }
+  .footer-logo-icon { width: 48px; height: 48px; flex-shrink: 0; }
   .footer-links { display: flex; gap: 24px; }
   .footer-links a { color: rgba(244,239,230,0.35); text-decoration: none; transition: color 0.3s; }
   .footer-links a:hover { color: var(--gold); }
@@ -820,7 +842,20 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">Андрей Ясинский <span>·</span> Ментор <span>·</span> Движок Твоего Бизнеса</a>
+  <a href="#" class="nav-logo">
+    <svg class="nav-logo-icon" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="27" cy="27" r="25" fill="rgba(196,148,58,0.12)" stroke="#C4943A" stroke-width="2"/>
+      <circle cx="27" cy="27" r="20" fill="none" stroke="rgba(196,148,58,0.3)" stroke-width="0.8"/>
+      <line x1="27" y1="2" x2="27" y2="8" stroke="#C4943A" stroke-width="2" stroke-linecap="round"/>
+      <line x1="27" y1="46" x2="27" y2="52" stroke="#C4943A" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="27" cy="2.5" r="2.2" fill="#C4943A"/>
+      <text font-family="Georgia, serif" font-size="13" font-weight="700" fill="#C4943A" text-anchor="middle" x="27" y="32" letter-spacing="0.14em">HTG</text>
+    </svg>
+    <span class="nav-logo-text">
+      <span class="nav-logo-name">Андрей Ясинский</span>
+      <span class="nav-logo-sub">Helpstogrow · Наставник</span>
+    </span>
+  </a>
   <ul class="nav-links">
     <li><a href="#pillars">Экспертиза</a></li>
     <li><a href="#services">Услуги</a></li>
@@ -1448,7 +1483,17 @@
 
 <!-- FOOTER -->
 <footer>
-  <a href="#" class="footer-logo">Андрей Ясинский<span>·</span> ДНК бизнеса</a>
+  <a href="#" class="footer-logo">
+    <svg class="footer-logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="24" cy="24" r="22" fill="rgba(196,148,58,0.12)" stroke="#C4943A" stroke-width="1.8"/>
+      <circle cx="24" cy="24" r="17" fill="none" stroke="rgba(196,148,58,0.3)" stroke-width="0.7"/>
+      <line x1="24" y1="2" x2="24" y2="7.5" stroke="#C4943A" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="24" y1="40.5" x2="24" y2="46" stroke="#C4943A" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="24" cy="2.5" r="2" fill="#C4943A"/>
+      <text font-family="Georgia, serif" font-size="12" font-weight="700" fill="#C4943A" text-anchor="middle" x="24" y="29" letter-spacing="0.14em">HTG</text>
+    </svg>
+    <span>Андрей Ясинский <span>·</span> Helpstogrow</span>
+  </a>
   <div class="footer-links">
     <a href="#">Telegram</a>
     <a href="#">Instagram</a>
