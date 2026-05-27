@@ -133,7 +133,7 @@
     transform: translate(-50%, -50%);
     opacity: 0; animation: fadeIn 1.2s ease forwards 1s;
   }
-  .hero-dna svg { width: 280px; height: 400px; }
+  .hero-dna svg { width: 320px; height: 480px; }
 
   .hero-stats {
     position: absolute; bottom: 56px; left: 48px; right: 48px;
@@ -848,36 +848,127 @@
   <div class="hero-right">
     <div class="hero-grid-overlay"></div>
     <div class="hero-dna">
-      <svg viewBox="0 0 280 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- DNA helix visualization -->
-        <path d="M60 20 Q140 60 220 100 Q140 140 60 180 Q140 220 220 260 Q140 300 60 340 Q140 380 220 400" stroke="rgba(196,148,58,0.4)" stroke-width="1.5" fill="none"></path>
-        <path d="M220 20 Q140 60 60 100 Q140 140 220 180 Q140 220 60 260 Q140 300 220 340 Q140 380 60 400" stroke="rgba(196,148,58,0.25)" stroke-width="1.5" fill="none"></path>
-        <!-- Rungs -->
-        <line x1="60" y1="20" x2="220" y2="20" stroke="rgba(196,148,58,0.15)" stroke-width="1"></line>
-        <line x1="98" y1="44" x2="182" y2="44" stroke="rgba(196,148,58,0.2)" stroke-width="1"></line>
-        <line x1="126" y1="72" x2="154" y2="72" stroke="rgba(196,148,58,0.3)" stroke-width="1"></line>
-        <line x1="140" y1="100" x2="140" y2="100" stroke="rgba(196,148,58,0.4)" stroke-width="2"></line>
-        <line x1="126" y1="128" x2="154" y2="128" stroke="rgba(196,148,58,0.3)" stroke-width="1"></line>
-        <line x1="98" y1="156" x2="182" y2="156" stroke="rgba(196,148,58,0.2)" stroke-width="1"></line>
-        <line x1="60" y1="180" x2="220" y2="180" stroke="rgba(196,148,58,0.15)" stroke-width="1"></line>
-        <line x1="98" y1="204" x2="182" y2="204" stroke="rgba(196,148,58,0.2)" stroke-width="1"></line>
-        <line x1="126" y1="232" x2="154" y2="232" stroke="rgba(196,148,58,0.3)" stroke-width="1"></line>
-        <line x1="140" y1="260" x2="140" y2="260" stroke="rgba(196,148,58,0.4)" stroke-width="2"></line>
-        <line x1="126" y1="288" x2="154" y2="288" stroke="rgba(196,148,58,0.3)" stroke-width="1"></line>
-        <line x1="98" y1="316" x2="182" y2="316" stroke="rgba(196,148,58,0.2)" stroke-width="1"></line>
-        <line x1="60" y1="340" x2="220" y2="340" stroke="rgba(196,148,58,0.15)" stroke-width="1"></line>
-        <line x1="98" y1="364" x2="182" y2="364" stroke="rgba(196,148,58,0.2)" stroke-width="1"></line>
-        <!-- Nodes -->
-        <circle cx="60" cy="20" r="5" fill="rgba(196,148,58,0.6)"></circle>
-        <circle cx="220" cy="100" r="5" fill="rgba(196,148,58,0.6)"></circle>
-        <circle cx="60" cy="180" r="5" fill="rgba(196,148,58,0.6)"></circle>
-        <circle cx="220" cy="260" r="5" fill="rgba(196,148,58,0.6)"></circle>
-        <circle cx="60" cy="340" r="5" fill="rgba(196,148,58,0.6)"></circle>
-        <circle cx="220" cy="20" r="5" fill="rgba(184,78,42,0.6)"></circle>
-        <circle cx="60" cy="100" r="5" fill="rgba(184,78,42,0.6)"></circle>
-        <circle cx="220" cy="180" r="5" fill="rgba(184,78,42,0.6)"></circle>
-        <circle cx="60" cy="260" r="5" fill="rgba(184,78,42,0.6)"></circle>
-        <circle cx="220" cy="340" r="5" fill="rgba(184,78,42,0.6)"></circle>
+      <svg viewBox="0 0 300 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="nodeGold" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="rgba(220,170,80,0.95)"/>
+            <stop offset="100%" stop-color="rgba(196,148,58,0.4)"/>
+          </radialGradient>
+          <radialGradient id="nodeEmber" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="rgba(210,100,60,0.95)"/>
+            <stop offset="100%" stop-color="rgba(184,78,42,0.4)"/>
+          </radialGradient>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="softglow">
+            <feGaussianBlur stdDeviation="1.5" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <!-- Background glow blobs -->
+        <ellipse cx="80" cy="200" rx="40" ry="120" fill="rgba(196,148,58,0.04)"/>
+        <ellipse cx="220" cy="280" rx="40" ry="120" fill="rgba(184,78,42,0.04)"/>
+
+        <!-- Strand A — gold -->
+        <path d="M70 10 C110 40, 190 60, 230 90 C190 120, 110 140, 70 170 C110 200, 190 220, 230 250 C190 280, 110 300, 70 330 C110 360, 190 380, 230 410 C190 440, 110 460, 70 470"
+              stroke="rgba(196,148,58,0.55)" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <!-- Strand A shadow -->
+        <path d="M70 10 C110 40, 190 60, 230 90 C190 120, 110 140, 70 170 C110 200, 190 220, 230 250 C190 280, 110 300, 70 330 C110 360, 190 380, 230 410 C190 440, 110 460, 70 470"
+              stroke="rgba(196,148,58,0.12)" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+        <!-- Strand B — ember -->
+        <path d="M230 10 C190 40, 110 60, 70 90 C110 120, 190 140, 230 170 C190 200, 110 220, 70 250 C110 280, 190 300, 230 330 C190 360, 110 380, 70 410 C110 440, 190 460, 230 470"
+              stroke="rgba(184,78,42,0.4)" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <!-- Strand B shadow -->
+        <path d="M230 10 C190 40, 110 60, 70 90 C110 120, 190 140, 230 170 C190 200, 110 220, 70 250 C110 280, 190 300, 230 330 C190 360, 110 380, 70 410 C110 440, 190 460, 230 470"
+              stroke="rgba(184,78,42,0.1)" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+        <!-- Rungs — with varying opacity based on perspective -->
+        <line x1="70" y1="10" x2="230" y2="10" stroke="rgba(196,148,58,0.12)" stroke-width="1.5"/>
+        <line x1="85" y1="30" x2="215" y2="30" stroke="rgba(196,148,58,0.18)" stroke-width="1"/>
+        <line x1="105" y1="50" x2="195" y2="50" stroke="rgba(196,148,58,0.25)" stroke-width="1"/>
+        <line x1="128" y1="68" x2="172" y2="68" stroke="rgba(196,148,58,0.32)" stroke-width="1.5"/>
+        <line x1="148" y1="82" x2="152" y2="82" stroke="rgba(196,148,58,0.45)" stroke-width="2"/>
+        <line x1="128" y1="96" x2="172" y2="96" stroke="rgba(196,148,58,0.32)" stroke-width="1.5"/>
+        <line x1="105" y1="112" x2="195" y2="112" stroke="rgba(196,148,58,0.22)" stroke-width="1"/>
+        <line x1="85" y1="130" x2="215" y2="130" stroke="rgba(196,148,58,0.15)" stroke-width="1"/>
+        <line x1="70" y1="170" x2="230" y2="170" stroke="rgba(196,148,58,0.12)" stroke-width="1.5"/>
+        <line x1="85" y1="190" x2="215" y2="190" stroke="rgba(196,148,58,0.18)" stroke-width="1"/>
+        <line x1="105" y1="210" x2="195" y2="210" stroke="rgba(196,148,58,0.25)" stroke-width="1"/>
+        <line x1="128" y1="228" x2="172" y2="228" stroke="rgba(196,148,58,0.32)" stroke-width="1.5"/>
+        <line x1="148" y1="242" x2="152" y2="242" stroke="rgba(196,148,58,0.45)" stroke-width="2"/>
+        <line x1="128" y1="256" x2="172" y2="256" stroke="rgba(196,148,58,0.32)" stroke-width="1.5"/>
+        <line x1="105" y1="272" x2="195" y2="272" stroke="rgba(196,148,58,0.22)" stroke-width="1"/>
+        <line x1="85" y1="290" x2="215" y2="290" stroke="rgba(196,148,58,0.15)" stroke-width="1"/>
+        <line x1="70" y1="330" x2="230" y2="330" stroke="rgba(196,148,58,0.12)" stroke-width="1.5"/>
+        <line x1="85" y1="350" x2="215" y2="350" stroke="rgba(196,148,58,0.18)" stroke-width="1"/>
+        <line x1="105" y1="370" x2="195" y2="370" stroke="rgba(196,148,58,0.25)" stroke-width="1"/>
+        <line x1="128" y1="388" x2="172" y2="388" stroke="rgba(196,148,58,0.32)" stroke-width="1.5"/>
+        <line x1="148" y1="402" x2="152" y2="402" stroke="rgba(196,148,58,0.45)" stroke-width="2"/>
+        <line x1="128" y1="416" x2="172" y2="416" stroke="rgba(196,148,58,0.32)" stroke-width="1.5"/>
+        <line x1="105" y1="432" x2="195" y2="432" stroke="rgba(196,148,58,0.22)" stroke-width="1"/>
+        <line x1="85" y1="450" x2="215" y2="450" stroke="rgba(196,148,58,0.15)" stroke-width="1"/>
+
+        <!-- Base pair dots on rungs -->
+        <circle cx="110" cy="50" r="2" fill="rgba(196,148,58,0.5)"/>
+        <circle cx="150" cy="50" r="2" fill="rgba(184,78,42,0.5)"/>
+        <circle cx="110" cy="210" r="2" fill="rgba(196,148,58,0.5)"/>
+        <circle cx="150" cy="210" r="2" fill="rgba(184,78,42,0.5)"/>
+        <circle cx="110" cy="370" r="2" fill="rgba(196,148,58,0.5)"/>
+        <circle cx="150" cy="370" r="2" fill="rgba(184,78,42,0.5)"/>
+
+        <!-- Main nodes — strand A (gold) with glow -->
+        <circle cx="70" cy="10" r="7" fill="url(#nodeGold)" filter="url(#glow)"/>
+        <circle cx="70" cy="10" r="3.5" fill="rgba(244,239,230,0.9)"/>
+        <circle cx="230" cy="90" r="7" fill="url(#nodeGold)" filter="url(#glow)"/>
+        <circle cx="230" cy="90" r="3.5" fill="rgba(244,239,230,0.9)"/>
+        <circle cx="70" cy="170" r="7" fill="url(#nodeGold)" filter="url(#glow)"/>
+        <circle cx="70" cy="170" r="3.5" fill="rgba(244,239,230,0.9)"/>
+        <circle cx="230" cy="250" r="7" fill="url(#nodeGold)" filter="url(#glow)"/>
+        <circle cx="230" cy="250" r="3.5" fill="rgba(244,239,230,0.9)"/>
+        <circle cx="70" cy="330" r="7" fill="url(#nodeGold)" filter="url(#glow)"/>
+        <circle cx="70" cy="330" r="3.5" fill="rgba(244,239,230,0.9)"/>
+        <circle cx="230" cy="410" r="7" fill="url(#nodeGold)" filter="url(#glow)"/>
+        <circle cx="230" cy="410" r="3.5" fill="rgba(244,239,230,0.9)"/>
+
+        <!-- Main nodes — strand B (ember) with glow -->
+        <circle cx="230" cy="10" r="7" fill="url(#nodeEmber)" filter="url(#glow)"/>
+        <circle cx="230" cy="10" r="3.5" fill="rgba(244,239,230,0.9)"/>
+        <circle cx="70" cy="90" r="7" fill="url(#nodeEmber)" filter="url(#glow)"/>
+        <circle cx="70" cy="90" r="3.5" fill="rgba(244,239,230,0.9)"/>
+        <circle cx="230" cy="170" r="7" fill="url(#nodeEmber)" filter="url(#glow)"/>
+        <circle cx="230" cy="170" r="3.5" fill="rgba(244,239,230,0.9)"/>
+        <circle cx="70" cy="250" r="7" fill="url(#nodeEmber)" filter="url(#glow)"/>
+        <circle cx="70" cy="250" r="3.5" fill="rgba(244,239,230,0.9)"/>
+        <circle cx="230" cy="330" r="7" fill="url(#nodeEmber)" filter="url(#glow)"/>
+        <circle cx="230" cy="330" r="3.5" fill="rgba(244,239,230,0.9)"/>
+        <circle cx="70" cy="410" r="7" fill="url(#nodeEmber)" filter="url(#glow)"/>
+        <circle cx="70" cy="410" r="3.5" fill="rgba(244,239,230,0.9)"/>
+
+        <!-- Mid-strand small nodes -->
+        <circle cx="150" cy="50" r="3.5" fill="url(#nodeGold)" filter="url(#softglow)"/>
+        <circle cx="150" cy="130" r="3.5" fill="url(#nodeEmber)" filter="url(#softglow)"/>
+        <circle cx="150" cy="210" r="3.5" fill="url(#nodeGold)" filter="url(#softglow)"/>
+        <circle cx="150" cy="290" r="3.5" fill="url(#nodeEmber)" filter="url(#softglow)"/>
+        <circle cx="150" cy="370" r="3.5" fill="url(#nodeGold)" filter="url(#softglow)"/>
+        <circle cx="150" cy="450" r="3.5" fill="url(#nodeEmber)" filter="url(#softglow)"/>
+
+        <!-- Animated pulse rings on key nodes -->
+        <circle cx="230" cy="90" r="12" fill="none" stroke="rgba(196,148,58,0.15)" stroke-width="1">
+          <animate attributeName="r" values="8;16;8" dur="3s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.3;0;0.3" dur="3s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="70" cy="250" r="12" fill="none" stroke="rgba(184,78,42,0.15)" stroke-width="1">
+          <animate attributeName="r" values="8;16;8" dur="3.5s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.3;0;0.3" dur="3.5s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="230" cy="410" r="12" fill="none" stroke="rgba(196,148,58,0.15)" stroke-width="1">
+          <animate attributeName="r" values="8;16;8" dur="4s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.3;0;0.3" dur="4s" repeatCount="indefinite"/>
+        </circle>
       </svg>
     </div>
     <div class="hero-stats">
