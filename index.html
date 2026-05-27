@@ -707,8 +707,9 @@
 
     .hero { grid-template-columns: 1fr; min-height: auto; }
     .hero-left { padding: 72px 24px 48px; }
-    .hero-right { height: 320px; }
-    .hero-stats { grid-template-columns: repeat(3,1fr); bottom: 24px; left: 16px; right: 16px; }
+    .hero-right { height: 420px; }
+    .hero-dna { top: 44%; }
+    .hero-stats { position: absolute; bottom: 0; left: 0; right: 0; grid-template-columns: repeat(3,1fr); }
     .hero-stat { padding: 16px 12px; }
     .hero-stat-num { font-size: 1.6rem; }
     .hero-stat-label { font-size: 0.65rem; }
@@ -750,9 +751,32 @@
     .pill { font-size: 0.72rem; padding: 6px 12px; }
     .hero-btns { flex-direction: column; align-items: flex-start; gap: 16px; }
     .btn-primary { width: 100%; text-align: center; padding: 16px; }
-    .hero-right { height: 260px; }
-    .hero-stats { grid-template-columns: repeat(3,1fr); }
+    .hero-right {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      overflow: visible;
+    }
+    .hero-dna {
+      position: relative;
+      top: auto; left: auto;
+      transform: none;
+      display: flex; justify-content: center;
+      padding: 32px 0 16px;
+      opacity: 1; animation: none;
+    }
+    .hero-dna svg { width: 220px; height: 320px; }
+    .hero-grid-overlay { display: none; }
+    .hero-stats {
+      position: relative;
+      bottom: auto; left: auto; right: auto;
+      grid-template-columns: repeat(3,1fr);
+      opacity: 1; animation: none;
+      background: rgba(196,148,58,0.15);
+    }
     .hero-stat-num { font-size: 1.3rem; }
+    .hero-stat { padding: 14px 8px; }
+    .hero-stat-label { font-size: 0.6rem; }
 
     .pillars { padding: 64px 20px; }
     .pillar { padding: 36px 28px; }
