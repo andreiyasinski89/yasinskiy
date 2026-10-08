@@ -564,43 +564,621 @@ var H = {
   "p056": "Strona:",
   "p057": "Andrei Yasinski",
   "p058": "© <span id=\"y\"></span> Helpstogrow. Wszelkie prawa zastrzeżone."
+ },
+ "en": {
+  "n001": "Andrei Yasinski",
+  "n002": "Expertise",
+  "n003": "Services",
+  "n004": "About me",
+  "n005": "Process",
+  "n006": "Diagnostics",
+  "n007": "Programs",
+  "n008": "Reviews",
+  "n009": "Search",
+  "n010": "Book a review",
+  "n011": "Expertise",
+  "n012": "Services",
+  "n013": "About me",
+  "n014": "Process",
+  "n015": "Diagnostics",
+  "n016": "Programs",
+  "n017": "Reviews",
+  "n018": "Book a review →",
+  "n019": "<i class=\"live\"></i> Mentor for entrepreneurs",
+  "n020": "I help entrepreneurs build processes, find and remove bottlenecks — and grow without burning out, with energy and a clear picture of the business.",
+  "n021": "Free review <span class=\"arr\">→</span>",
+  "n022": "Take the diagnostic",
+  "n023": "Business DNA",
+  "n024": "Processes and systems",
+  "n025": "Owner’s well-being",
+  "n026": "Energy and effectiveness",
+  "n027": "<i></i> Out of day-to-day operations",
+  "n028": "<i></i> A team without chaos",
+  "n029": "Clients’ revenue growth",
+  "n030": "entrepreneurs",
+  "n031": "average revenue growth",
+  "n032": "11 years",
+  "n033": "in business",
+  "n034": "Expertise",
+  "n035": "Four areas<br>that <span class=\"grad-text\">change a business</span><br>from within",
+  "n036": "Business DNA",
+  "n037": "We examine the foundation: values, purpose, structure. We find what works at the core of the business — and what has long been outdated and drags it down. We build what lives without constant manual management.",
+  "n038": "Business model",
+  "n039": "Goals",
+  "n040": "Structure",
+  "n041": "Resilience",
+  "n042": "Processes and backbone",
+  "n043": "We build a system that works without you. We write procedures, set up workflows, delegate the right way. The business stops depending on your presence every single minute.",
+  "n044": "Procedures",
+  "n045": "Delegation",
+  "n046": "Automation",
+  "n047": "Team",
+  "n048": "Bottlenecks",
+  "n049": "We diagnose where the business loses money, time and energy. We find the bottleneck — and fix it precisely. Often a single change brings growth that years of effort did not.",
+  "n050": "Loss analysis",
+  "n051": "Diagnostics",
+  "n052": "Quick growth points",
+  "n053": "Owner’s well-being",
+  "n054": "We work on you: energy, focus, self-presentation, negotiation. Because a business grows exactly as much as its owner does. We remove what holds you back from within.",
+  "n055": "Energy",
+  "n056": "Negotiation",
+  "n057": "Self-presentation",
+  "n058": "Effectiveness",
+  "n059": "Concrete tools",
+  "n060": "What exactly<br>we <span class=\"grad-text\">do</span> together",
+  "n061": "Every tool is a concrete result that stays in the business after the work is done. Not advice and recommendations, but ready-made systems that start working right away.",
+  "n062": "Business analysis",
+  "n063": "Choosing tools",
+  "n064": "Dashboards for management",
+  "n065": "Sales department",
+  "n066": "Collaboration processes",
+  "n067": "Checklists and scripts",
+  "n068": "Business <span class=\"grad-text\">analysis</span>",
+  "n069": "Deep diagnostics: we look at the business like a doctor, not like a manager. Numbers, processes, team, product, market — all in one picture. We find where money and energy are really being lost.",
+  "n070": "Financial model and unit economics",
+  "n071": "Audit of the sales funnel and conversions",
+  "n072": "Analysis of the team and areas of responsibility",
+  "n073": "Map of losses and growth points",
+  "n074": "Choosing <span class=\"grad-text\">tools</span>",
+  "n075": "I don’t push trendy services — I choose what suits you: by scale, budget and tasks. CRM, task managers, analytics, communication — we assemble a stack that works.",
+  "n076": "Audit of your current tech stack",
+  "n077": "Choosing a CRM and management systems",
+  "n078": "Setting up analytics and reporting",
+  "n079": "Integrating the tools with each other",
+  "n080": "Dashboards for <span class=\"grad-text\">management</span>",
+  "n081": "We create a single control panel for the business: key metrics in real time, with no Excel spreadsheets and no “so how are we doing?” calls. You make decisions based on data, not feelings.",
+  "n082": "Defining key metrics (KPIs)",
+  "n083": "Building an operational dashboard",
+  "n084": "Financial and management accounting",
+  "n085": "Automating data collection",
+  "n086": "Sales <span class=\"grad-text\">department</span>",
+  "n087": "We build a sales department from scratch or restructure an existing one. Funnel, scripts, KPIs, motivation, hiring. Sales stop depending on one “star” manager or on you personally.",
+  "n088": "Structure and roles in the department",
+  "n089": "Funnel and CRM process",
+  "n090": "Motivation system and KPIs",
+  "n091": "Hiring and onboarding managers",
+  "n092": "Collaboration <span class=\"grad-text\">processes</span>",
+  "n093": "We define how people and departments work together: who is responsible for what, how tasks are handed over, where decisions are made. We remove duplicated work, turf conflicts and “I thought that wasn’t mine.”",
+  "n094": "Map of how departments interact",
+  "n095": "Responsibility matrix (RACI)",
+  "n096": "Task handover procedures",
+  "n097": "Decision points",
+  "n098": "Checklists and <span class=\"grad-text\">scripts</span>",
+  "n099": "We turn expertise into documents. Checklists for recurring processes, scripts for sales and negotiations, instructions for the team. The business stops depending on the memory of particular people.",
+  "n100": "Sales and negotiation scripts",
+  "n101": "Acceptance and control checklists",
+  "n102": "Instructions for new employees",
+  "n103": "Knowledge base and procedures",
+  "n104": "Who I am",
+  "n105": "A practitioner <span class=\"grad-text\">from the field,</span> who understands the difference between knowledge and skills.",
+  "n106": "A business is an organism. It has to breathe. My job is to teach it to do that autonomously, without your involvement in every process. The owner should see the whole picture, not put out the daily fires of operations.",
+  "n107": "<strong>A synthesis of broad experience in employment and entrepreneurship.</strong> I built businesses myself — from scratch, with my own money, without connections. I went through operational chaos, teams without procedures, negotiations without preparation. I figured it all out by collecting my own bruises. I know exactly what not to do and what to take into account so that you don’t “suddenly” find yourself at the bottom.",
+  "n108": "Now I help others <strong>not repeat my mistakes</strong> and move faster. I don’t give textbook advice — I analyze your specific situation and suggest specific steps. Everyone has their own unique set of qualities and features — that’s why we treat a business as a unique DNA: with its cases, team, market, location and other factors that affect its development.",
+  "n109": "A separate area is <strong>working with energy and well-being.</strong> Because a tired owner doesn’t build a good business. As a coach, I work with what happens inside: what drains your strength, what blocks growth, how to reach a new level without burnout.",
+  "n110": "<strong>of clients get out of day-to-day operations</strong>within the first 4–6 months of working together",
+  "n111": "<strong>average revenue growth</strong>for clients after 6 months of mentoring",
+  "n112": "<strong>entrepreneurs have worked with me</strong>in different formats over 5 years of practice",
+  "n113": "How we work",
+  "n114": "From chaos —<br>to a <span class=\"grad-text\">system</span>",
+  "n115": "Every session is a concrete result, not just a conversation. We work systematically: diagnostics, strategy, implementation, growth.",
+  "n116": "Introduction and diagnostics",
+  "n117": "Free",
+  "n118": "A free call of 30–40 minutes. We find out where you are now, what is in the way, what you want to achieve. I look at the business without embellishment and tell you honestly.",
+  "n119": "In-depth business audit",
+  "n120": "Session 1–2",
+  "n121": "I study the structure, processes, numbers. I find the bottlenecks and growth points. I draw up a map of what exactly is holding the business back at each level.",
+  "n122": "Strategy and priorities",
+  "n123": "Session 2–3",
+  "n124": "Together we decide what to do first. Not a list of 50 tasks, but three key changes that will deliver 80% of the result.",
+  "n125": "Implementation and support",
+  "n126": "Ongoing",
+  "n127": "I walk alongside you while you implement. I answer questions, help you not get stuck, adjust along the way. I don’t let go until there is a result.",
+  "n128": "Express diagnostic",
+  "n129": "Where is your business<br><span class=\"grad-text\">losing energy?</span>",
+  "n130": "Diagnostics",
+  "n131": "Ways to work together",
+  "n132": "Choose your <span class=\"grad-text\">format</span>",
+  "n133": "Business review",
+  "n134": "One-off session · 2 hours",
+  "n135": "An in-depth review of a specific situation. You leave with clarity and an action plan. Suited for those who are stuck on a specific issue.",
+  "n136": "2 hours of intensive work",
+  "n137": "Diagnosing the bottleneck",
+  "n138": "A specific action plan in writing",
+  "n139": "Answers to your questions for 7 days afterwards",
+  "n140": "Sign up",
+  "n141": "Popular",
+  "n142": "3-month mentoring",
+  "n143": "Systematic work · 3 months",
+  "n144": "Full support: we build the system, get you out of day-to-day operations, work on your well-being. We move from point A to point B together.",
+  "n145": "2 sessions a month, 1.5 hours each",
+  "n146": "Support in a messenger",
+  "n147": "Review of decisions and materials",
+  "n148": "Work on well-being and energy",
+  "n149": "Audit of processes and procedures",
+  "n150": "800 EUR <small>/ month</small>",
+  "n151": "Sign up",
+  "n152": "VIP day",
+  "n153": "Intensive · Full day",
+  "n154": "We immerse ourselves in the business for a whole day. We create a strategic map for the year: what to build, how to grow, where the breakthrough points are.",
+  "n155": "6 hours of focused work",
+  "n156": "Full diagnostics of the business",
+  "n157": "Strategy and a roadmap for the year",
+  "n158": "Work on the owner’s well-being",
+  "n159": "A month of support after the day",
+  "n160": "Sign up",
+  "n161": "Client results",
+  "n162": "A business that<br><span class=\"grad-text\">works differently</span>",
+  "n163": "For three years I built an IT product and at the same time put out fires in operations. Every day was full of tasks, but the business wasn’t growing. After the mentoring we set up the team structure, defined areas of responsibility, introduced weekly sprints. Four months later, for the first time I was working on strategy rather than on who got sick and who didn’t hand in a task.",
+  "n164": "The team grew from 4 to 11 people without chaos",
+  "n165": "DK",
+  "n166": "Dmitry",
+  "n167": "CEO, SaaS startup",
+  "n168": "I had a chain of three beauty salons and the feeling that I was working for the business, not the other way round. Andrei helped find the bottleneck — the problem turned out not to be the receptionists, but how booking and repeat visits were set up. We reworked the process — client retention grew by 35%.",
+  "n169": "Returning clients +35% in 2 months",
+  "n170": "MV",
+  "n171": "Maria",
+  "n172": "Owner of a beauty salon chain",
+  "n173": "I opened a café two years ago — everything rested on me personally. Any shift without me meant stress. After working with Andrei we wrote down standards, trained two managers, made checklists for every shift. Now I’m leaving for two weeks — and everything works.",
+  "n174": "First vacation in 2 years without calls",
+  "n175": "TM",
+  "n176": "Timur",
+  "n177": "Café owner",
+  "n178": "I came to the business review with one question — why there is never enough money despite good revenue. In two hours we worked through the unit economics, found three items on the menu that were losing money, and understood where the margin really is. The session paid for itself in the very first month.",
+  "n179": "Found the loss-making items, margin +18%",
+  "n180": "SL",
+  "n181": "Sofia",
+  "n182": "Restaurant owner",
+  "n183": "I worked with Andrei on my well-being and negotiations. It sounds abstract — but the result is concrete. I closed a partnership I had dragged on for two years and was afraid to end. I signed a contract with a client twice as big as those I had worked with before. It turned out it wasn’t about skills — it was about how I present myself.",
+  "n184": "Closed a contract 2× bigger than my previous best",
+  "n185": "AV",
+  "n186": "Alexey",
+  "n187": "Founder of a digital agency",
+  "n188": "Questions",
+  "n189": "What people <span class=\"grad-text\">usually ask</span>",
+  "n190": "Can’t find your answer? Write to me on Telegram — I’ll reply personally.",
+  "n191": "How does the first call go?<span class=\"pm\"></span>",
+  "n192": "A free call of 30–40 minutes. We find out where you are now, what is in the way and what you want to achieve. No obligations — by the end it will be clear whether it makes sense to keep working together.",
+  "n193": "How is mentoring different from a course or a consultation?<span class=\"pm\"></span>",
+  "n194": "There are no textbooks or template advice here. We work through your business specifically — its DNA, team, market — and implement concrete changes together. I walk alongside you while you implement, and adjust along the way.",
+  "n195": "Which format should I choose?<span class=\"pm\"></span>",
+  "n196": "If you’re stuck on one specific issue — a business review. If you need a system and a way out of day-to-day operations — 3-month mentoring. If you need a strategy for the year — the VIP day. Not sure — take the express diagnostic above or choose “Not sure yet” in the request form.",
+  "n197": "What will I get in the end?<span class=\"pm\"></span>",
+  "n198": "Not advice, but ready-made systems: a map of losses and growth points, procedures, checklists, scripts, a metrics dashboard — what stays in the business and keeps working after our sessions.",
+  "n199": "How quickly will you reply to my request?<span class=\"pm\"></span>",
+  "n200": "Within 24 hours — I’ll write to you and we’ll agree on a time for the call.",
+  "n201": "Get started",
+  "n202": "Let’s review<br>your business<br><span class=\"grad-text\">for free</span>",
+  "n203": "The first call is 30 minutes, free and with no obligations. We look at your situation honestly: where it’s stuck, what is in the way, whether it makes sense to keep working together.",
+  "n204": "Write on Telegram",
+  "n205": "Leave a request",
+  "n206": "I’ll reply within 24 hours and we’ll agree on a time for the call",
+  "n207": "Name",
+  "n208": "Telegram / WhatsApp / phone",
+  "n209": "Free review (introduction)",
+  "n210": "Business review — one-off session",
+  "n211": "3-month mentoring",
+  "n212": "VIP day",
+  "n213": "Not sure yet, I want to figure it out",
+  "n214": "Which format are you interested in?",
+  "n215": "Briefly: what do you do and what do you want to change?",
+  "n216": "Send request <span class=\"arr\">→</span>",
+  "n217": "By submitting the form, you agree to the <a href=\"privacy.html\">privacy policy</a>",
+  "n218": "Request sent",
+  "n219": "Thank you! I’ll reply within 24 hours.",
+  "n220": "Andrei Yasinski",
+  "n221": "Privacy policy",
+  "n222": "© <span id=\"year\">2025</span> Helpstogrow. All rights reserved.",
+  "p001": "Andrei Yasinski",
+  "p002": "← Back to the site",
+  "p003": "Legal documents",
+  "p004": "Privacy Policy",
+  "p005": "Last updated: May 27, 2026",
+  "p006": "This Privacy Policy describes how Andrei Yasinski (hereinafter the “Controller”, “I”, “we”), operating through the website <strong>helpstogrow.com</strong>, collects, uses and protects users’ personal data in accordance with the General Data Protection Regulation (GDPR, Regulation (EU) 2016/679).",
+  "p007": "1. Who is the data controller",
+  "p008": "The controller of personal data is:",
+  "p009": "<strong>Name:</strong> Andrei Yasinski",
+  "p010": "<strong>Website:</strong> helpstogrow.com",
+  "p011": "<strong>Email for data-related requests:</strong> contact@helpstogrow.com",
+  "p012": "2. What data we collect",
+  "p013": "When you fill in the contact form on the website, we collect the following data:",
+  "p014": "Name",
+  "p015": "Contact details: phone number, Telegram or WhatsApp",
+  "p016": "The format of work you are interested in",
+  "p017": "Information about your business and request (if you provided it)",
+  "p018": "We do not collect special categories of data (racial or ethnic origin, political opinions, health data, etc.).",
+  "p019": "3. What the data is used for",
+  "p020": "The collected data is used exclusively for:",
+  "p021": "Responding to your request and arranging the first call",
+  "p022": "Agreeing on the terms and format of cooperation",
+  "p023": "Sending information about mentoring programs (only with your consent)",
+  "p024": "We do not use your data for automated decision-making or profiling.",
+  "p025": "4. Legal basis for processing",
+  "p026": "Personal data is processed on the basis of:",
+  "p027": "<strong>Consent</strong> — you give explicit consent when submitting the form (Art. 6(1)(a) GDPR)",
+  "p028": "<strong>Pre-contractual measures</strong> — to respond to your request about cooperation (Art. 6(1)(b) GDPR)",
+  "p029": "5. Disclosure of data to third parties",
+  "p030": "The <strong>Formspree</strong> service (Formspree, Inc., USA) is used to process contact forms. The service processes data in accordance with its own privacy policy and complies with GDPR requirements.",
+  "p031": "We do not sell, transfer or disclose your data to third parties for any other purposes.",
+  "p032": "6. Data retention period",
+  "p033": "Data from the contact form is stored no longer than necessary to achieve the purpose for which it was collected:",
+  "p034": "Data of potential clients with whom cooperation has not started — up to <strong>6 months</strong>",
+  "p035": "Data of current and former clients — for the duration of the cooperation and <strong>3 years</strong> after it ends",
+  "p036": "After the specified period, the data is irrevocably deleted.",
+  "p037": "7. Your rights under the GDPR",
+  "p038": "In accordance with the GDPR, you have the following rights:",
+  "p039": "<strong>Right of access</strong> — to request a copy of your data that we store",
+  "p040": "<strong>Right to rectification</strong> — to require correction of inaccurate data",
+  "p041": "<strong>Right to erasure</strong> (“right to be forgotten”) — to require deletion of your data",
+  "p042": "<strong>Right to restriction of processing</strong> — to restrict the use of your data",
+  "p043": "<strong>Right to data portability</strong> — to receive your data in a machine-readable format",
+  "p044": "<strong>Right to withdraw consent</strong> — to withdraw consent at any time without detriment to yourself",
+  "p045": "<strong>Right to lodge a complaint</strong> — to file a complaint with the data protection supervisory authority of your country",
+  "p046": "To exercise any of these rights, write to us at: <a href=\"mailto:contact@helpstogrow.com\">contact@helpstogrow.com</a>. We will reply within 30 days.",
+  "p047": "8. Cookies",
+  "p048": "The website currently does not use analytics or marketing cookies. Only technically necessary cookies are used for the website to function correctly.",
+  "p049": "If analytics tools (for example, Google Analytics) are connected, this policy will be updated and a cookie consent banner will appear on the website.",
+  "p050": "9. Data security",
+  "p051": "We take reasonable technical and organizational measures to protect your data against unauthorized access, alteration, disclosure or destruction. The website uses the HTTPS protocol to encrypt transmitted data.",
+  "p052": "10. Changes to this policy",
+  "p053": "We reserve the right to update this Privacy Policy. If material changes are made, the date of the last update at the beginning of the document will be changed. We recommend checking this page periodically.",
+  "p054": "11. Contact",
+  "p055": "If you have questions or requests regarding the processing of your personal data, please contact us:",
+  "p056": "Website:",
+  "p057": "Andrei Yasinski",
+  "p058": "© <span id=\"y\"></span> Helpstogrow. All rights reserved."
+ },
+ "de": {
+  "n001": "Andrei Yasinski",
+  "n002": "Expertise",
+  "n003": "Leistungen",
+  "n004": "Über mich",
+  "n005": "Ablauf",
+  "n006": "Diagnose",
+  "n007": "Programme",
+  "n008": "Referenzen",
+  "n009": "Suche",
+  "n010": "Erstgespräch buchen",
+  "n011": "Expertise",
+  "n012": "Leistungen",
+  "n013": "Über mich",
+  "n014": "Ablauf",
+  "n015": "Diagnose",
+  "n016": "Programme",
+  "n017": "Referenzen",
+  "n018": "Erstgespräch buchen →",
+  "n019": "<i class=\"live\"></i> Mentor für Unternehmer",
+  "n020": "Ich helfe Unternehmern, Prozesse aufzubauen, Engpässe zu finden und zu beseitigen — und zu wachsen, ohne sich aufzureiben: mit Energie und einem klaren Bild vom Unternehmen.",
+  "n021": "Kostenloses Erstgespräch <span class=\"arr\">→</span>",
+  "n022": "Diagnose starten",
+  "n023": "Business-DNA",
+  "n024": "Prozesse und Systeme",
+  "n025": "Befinden des Inhabers",
+  "n026": "Energie und Effizienz",
+  "n027": "<i></i> Raus aus dem Tagesgeschäft",
+  "n028": "<i></i> Team ohne Chaos",
+  "n029": "Umsatzwachstum der Kunden",
+  "n030": "Unternehmer",
+  "n031": "durchschnittliches Umsatzwachstum",
+  "n032": "11 Jahre",
+  "n033": "im Business",
+  "n034": "Expertise",
+  "n035": "Vier Bereiche,<br>die ein <span class=\"grad-text\">Unternehmen verändern</span><br>von innen heraus",
+  "n036": "Business-DNA",
+  "n037": "Wir nehmen das Fundament auseinander: Werte, Sinn, Struktur. Wir finden heraus, was im Kern deines Unternehmens funktioniert — und was längst veraltet ist und es herunterzieht. Wir bauen das, was ohne ständige manuelle Steuerung funktioniert.",
+  "n038": "Geschäftsmodell",
+  "n039": "Ziele",
+  "n040": "Struktur",
+  "n041": "Stabilität",
+  "n042": "Prozesse und Rückgrat",
+  "n043": "Wir bauen ein System auf, das ohne dich funktioniert. Wir schreiben Abläufe auf, richten Prozessketten ein und delegieren richtig. Dein Unternehmen hängt nicht mehr jede Minute von deiner Anwesenheit ab.",
+  "n044": "Abläufe",
+  "n045": "Delegation",
+  "n046": "Automatisierung",
+  "n047": "Team",
+  "n048": "Engpässe",
+  "n049": "Wir diagnostizieren, wo dein Unternehmen Geld, Zeit und Energie verliert. Wir finden den Engpass — und beseitigen ihn gezielt. Oft bringt eine einzige Veränderung das Wachstum, das jahrelange Anstrengung nicht gebracht hat.",
+  "n050": "Verlustanalyse",
+  "n051": "Diagnose",
+  "n052": "Schnelle Wachstumshebel",
+  "n053": "Befinden des Inhabers",
+  "n054": "Wir arbeiten an dir: Energie, Fokus, Selbstpräsentation, Verhandlungen. Denn ein Unternehmen wächst genau so weit, wie sein Inhaber wächst. Wir beseitigen das, was dich von innen bremst.",
+  "n055": "Energie",
+  "n056": "Verhandlung",
+  "n057": "Selbstpräsentation",
+  "n058": "Effizienz",
+  "n059": "Konkrete Werkzeuge",
+  "n060": "Was genau wir<br>gemeinsam <span class=\"grad-text\">tun</span>",
+  "n061": "Jedes Werkzeug ist ein konkretes Ergebnis, das nach der Zusammenarbeit im Unternehmen bleibt. Keine Ratschläge und Empfehlungen, sondern fertige Systeme, die sofort zu arbeiten beginnen.",
+  "n062": "Unternehmensanalyse",
+  "n063": "Auswahl der Werkzeuge",
+  "n064": "Dashboards für die Steuerung",
+  "n065": "Vertriebsabteilung",
+  "n066": "Abstimmungsprozesse",
+  "n067": "Checklisten und Skripte",
+  "n068": "<span class=\"grad-text\">Unternehmens&shy;</span>analyse",
+  "n069": "Tiefendiagnose: Wir betrachten dein Unternehmen wie ein Arzt, nicht wie ein Manager. Zahlen, Prozesse, Team, Produkt, Markt — alles in einem Bild. Wir finden heraus, wo wirklich Geld und Energie verloren gehen.",
+  "n070": "Finanzmodell und Unit Economics",
+  "n071": "Audit von Vertriebstrichter und Conversions",
+  "n072": "Analyse von Team und Verantwortungsbereichen",
+  "n073": "Karte der Verluste und Wachstumspunkte",
+  "n074": "Auswahl der <span class=\"grad-text\">Werkzeuge</span>",
+  "n075": "Ich dränge dir keine Trend-Tools auf — ich wähle aus, was zu dir passt: nach Größe, Budget und Aufgaben. CRM, Aufgabenmanager, Analytics, Kommunikation — wir stellen einen Tool-Stack zusammen, der funktioniert.",
+  "n076": "Audit deines aktuellen Tech-Stacks",
+  "n077": "Auswahl von CRM und Managementsystemen",
+  "n078": "Einrichtung von Analytics und Reporting",
+  "n079": "Integration der Werkzeuge untereinander",
+  "n080": "Dashboards für die <span class=\"grad-text\">Steuerung</span>",
+  "n081": "Wir schaffen ein einheitliches Steuerungs-Cockpit für dein Unternehmen: zentrale Kennzahlen in Echtzeit, ohne Excel-Tabellen und ohne Anrufe nach dem Motto „Wie läuft es eigentlich?“. Du triffst Entscheidungen auf Basis von Daten, nicht von Bauchgefühl.",
+  "n082": "Festlegung der Schlüsselkennzahlen (KPIs)",
+  "n083": "Aufbau eines operativen Dashboards",
+  "n084": "Finanz- und Managementbuchhaltung",
+  "n085": "Automatisierung der Datenerfassung",
+  "n086": "<span class=\"grad-text\">Vertriebs&shy;</span>abteilung",
+  "n087": "Wir bauen eine Vertriebsabteilung von Grund auf neu auf oder strukturieren eine bestehende um. Trichter, Skripte, KPIs, Motivation, Recruiting. Der Vertrieb hängt nicht mehr von einem „Star“-Manager oder von dir persönlich ab.",
+  "n088": "Struktur und Rollen in der Abteilung",
+  "n089": "Trichter und CRM-Prozess",
+  "n090": "Motivationssystem und KPIs",
+  "n091": "Recruiting und Onboarding von Managern",
+  "n092": "<span class=\"grad-text\">Abstimmungs&shy;</span>prozesse",
+  "n093": "Wir legen fest, wie Menschen und Abteilungen zusammenarbeiten: wer wofür verantwortlich ist, wie Aufgaben übergeben werden, wo Entscheidungen fallen. Wir beseitigen Doppelarbeit, Zuständigkeitskonflikte und das „Ich dachte, das ist nicht meine Aufgabe“.",
+  "n094": "Karte der Zusammenarbeit der Abteilungen",
+  "n095": "Verantwortungsmatrix (RACI)",
+  "n096": "Abläufe für die Aufgabenübergabe",
+  "n097": "Entscheidungspunkte",
+  "n098": "Checklisten und <span class=\"grad-text\">Skripte</span>",
+  "n099": "Wir verwandeln Expertise in Dokumente. Checklisten für wiederkehrende Prozesse, Skripte für Vertrieb und Verhandlungen, Anleitungen für das Team. Dein Unternehmen hängt nicht mehr vom Gedächtnis einzelner Personen ab.",
+  "n100": "Skripte für Vertrieb und Verhandlungen",
+  "n101": "Checklisten für Abnahme und Kontrolle",
+  "n102": "Anleitungen für neue Mitarbeiter",
+  "n103": "Wissensdatenbank und Abläufe",
+  "n104": "Wer ich bin",
+  "n105": "Ein Praktiker, <span class=\"grad-text\">direkt aus dem Feld,</span> der den Unterschied zwischen Wissen und Können kennt.",
+  "n106": "Ein Unternehmen ist ein Organismus. Es muss atmen. Meine Aufgabe ist es, ihm beizubringen, das eigenständig zu tun, ohne dass du an jedem Prozess beteiligt bist. Der Inhaber sollte das Gesamtbild sehen, statt täglich die Brände im Tagesgeschäft zu löschen.",
+  "n107": "<strong>Eine Synthese aus langer Erfahrung in Anstellung und Unternehmertum.</strong> Ich habe selbst Unternehmen aufgebaut — von null, mit eigenem Geld, ohne Beziehungen. Ich habe operatives Chaos erlebt, Teams ohne Abläufe, Verhandlungen ohne Vorbereitung. Ich habe alles gelernt, indem ich mir meine eigenen Beulen geholt habe. Ich weiß genau, was man nicht tun sollte und was man beachten muss, um nicht „plötzlich“ ganz unten zu landen.",
+  "n108": "Heute helfe ich anderen, <strong>meine Fehler nicht zu wiederholen</strong> und schneller voranzukommen. Ich gebe keine Lehrbuch-Ratschläge — ich analysiere deine konkrete Situation und schlage konkrete Schritte vor. Jeder hat sein eigenes, einzigartiges Set an Eigenschaften und Besonderheiten — deshalb betrachten wir ein Unternehmen als einzigartige DNA: mit seinen Fällen, seinem Team, seinem Markt, seinem Standort und weiteren Faktoren, die seine Entwicklung beeinflussen.",
+  "n109": "Ein eigener Bereich ist die <strong>Arbeit mit Energie und Befinden.</strong> Denn ein erschöpfter Inhaber baut kein gutes Unternehmen auf. Als Coach arbeite ich mit dem, was innen passiert: was Kraft raubt, was Wachstum blockiert und wie man ohne Burnout auf die nächste Stufe kommt.",
+  "n110": "<strong>der Kunden lösen sich aus dem Tagesgeschäft</strong>innerhalb der ersten 4–6 Monate der Zusammenarbeit",
+  "n111": "<strong>durchschnittliches Umsatzwachstum</strong>bei Kunden nach 6 Monaten Mentoring",
+  "n112": "<strong>Unternehmer haben mit mir gearbeitet</strong>in verschiedenen Formaten in 5 Jahren Praxis",
+  "n113": "So arbeiten wir",
+  "n114": "Vom Chaos —<br>zum <span class=\"grad-text\">System</span>",
+  "n115": "Jede Sitzung ist ein konkretes Ergebnis und nicht nur ein Gespräch. Wir arbeiten systematisch: Diagnose, Strategie, Umsetzung, Wachstum.",
+  "n116": "Kennenlernen und Diagnose",
+  "n117": "Kostenlos",
+  "n118": "Ein kostenloses Gespräch von 30–40 Minuten. Wir klären, wo du jetzt stehst, was im Weg steht und was du erreichen willst. Ich betrachte dein Unternehmen ohne Schönfärberei und sage dir ehrlich meine Meinung.",
+  "n119": "Tiefgehendes Unternehmens-Audit",
+  "n120": "Sitzung 1–2",
+  "n121": "Ich untersuche Struktur, Prozesse und Zahlen. Ich finde die Engpässe und Wachstumspunkte. Ich erstelle eine Karte davon, was dein Unternehmen auf jeder Ebene genau ausbremst.",
+  "n122": "Strategie und Prioritäten",
+  "n123": "Sitzung 2–3",
+  "n124": "Gemeinsam legen wir fest, was zuerst zu tun ist. Keine Liste mit 50 Aufgaben, sondern drei zentrale Veränderungen, die 80 % des Ergebnisses bringen.",
+  "n125": "Umsetzung und Begleitung",
+  "n126": "Laufend",
+  "n127": "Ich gehe neben dir, während du umsetzt. Ich beantworte Fragen, helfe dir, nicht stecken zu bleiben, und steuere unterwegs nach. Ich lasse nicht los, bis das Ergebnis da ist.",
+  "n128": "Express-Diagnose",
+  "n129": "Wo verliert dein Unternehmen<br><span class=\"grad-text\">Energie?</span>",
+  "n130": "Diagnose",
+  "n131": "Formate der Zusammenarbeit",
+  "n132": "Wähle dein <span class=\"grad-text\">Format</span>",
+  "n133": "Business-Review",
+  "n134": "Einzelsitzung · 2 Stunden",
+  "n135": "Eine gründliche Analyse einer konkreten Situation. Du gehst mit Klarheit und einem Aktionsplan nach Hause. Geeignet für alle, die bei einer konkreten Frage nicht weiterkommen.",
+  "n136": "2 Stunden intensive Arbeit",
+  "n137": "Diagnose des Engpasses",
+  "n138": "Ein konkreter Aktionsplan schriftlich",
+  "n139": "Antworten auf deine Fragen in den 7 Tagen danach",
+  "n140": "Platz sichern",
+  "n141": "Beliebt",
+  "n142": "Mentoring über 3 Monate",
+  "n143": "Systematische Arbeit · 3 Monate",
+  "n144": "Umfassende Begleitung: Wir bauen das System auf, holen dich aus dem Tagesgeschäft und arbeiten an deinem Befinden. Gemeinsam gehen wir von Punkt A zu Punkt B.",
+  "n145": "2 Sitzungen pro Monat à 1,5 Stunden",
+  "n146": "Unterstützung per Messenger",
+  "n147": "Feedback zu Entscheidungen und Unterlagen",
+  "n148": "Arbeit an Befinden und Energie",
+  "n149": "Audit von Prozessen und Abläufen",
+  "n150": "800 EUR <small>/ Monat</small>",
+  "n151": "Platz sichern",
+  "n152": "VIP-Tag",
+  "n153": "Intensiv · Ganzer Tag",
+  "n154": "Wir tauchen einen ganzen Tag lang in dein Unternehmen ein. Wir erstellen eine strategische Karte für das Jahr: was aufzubauen ist, wie du wächst und wo die Durchbruchspunkte liegen.",
+  "n155": "6 Stunden konzentrierte Arbeit",
+  "n156": "Vollständige Diagnose des Unternehmens",
+  "n157": "Strategie und Fahrplan für das Jahr",
+  "n158": "Arbeit am Befinden des Inhabers",
+  "n159": "Ein Monat Begleitung nach dem Tag",
+  "n160": "Platz sichern",
+  "n161": "Kundenergebnisse",
+  "n162": "Ein Unternehmen, das<br><span class=\"grad-text\">anders funktioniert</span>",
+  "n163": "Drei Jahre lang habe ich ein IT-Produkt aufgebaut und nebenbei im Tagesgeschäft Brände gelöscht. Jeden Tag war ich mit Aufgaben beschäftigt, aber das Unternehmen wuchs nicht. Nach dem Mentoring haben wir die Teamstruktur aufgebaut, Verantwortungsbereiche festgelegt und wöchentliche Sprints eingeführt. Nach vier Monaten habe ich zum ersten Mal an der Strategie gearbeitet, statt mich darum zu kümmern, wer krank ist und wer eine Aufgabe nicht abgegeben hat.",
+  "n164": "Das Team wuchs ohne Chaos von 4 auf 11 Personen",
+  "n165": "DK",
+  "n166": "Dmitri",
+  "n167": "CEO, SaaS-Startup",
+  "n168": "Ich hatte eine Kette aus drei Kosmetiksalons und das Gefühl, dass ich für das Geschäft arbeite und nicht umgekehrt. Andrei hat mir geholfen, den Engpass zu finden — das Problem lag nicht bei den Empfangskräften, sondern darin, wie Terminbuchung und Folgebesuche organisiert waren. Wir haben den Prozess umgebaut — die Zahl der wiederkehrenden Kunden stieg um 35 %.",
+  "n169": "Wiederkehrende Kunden +35 % in 2 Monaten",
+  "n170": "MV",
+  "n171": "Maria",
+  "n172": "Inhaberin einer Kosmetiksalon-Kette",
+  "n173": "Ich habe vor zwei Jahren ein Café eröffnet — alles hing an mir persönlich. Jede Schicht ohne mich bedeutete Stress. Nach der Arbeit mit Andrei haben wir Standards festgehalten, zwei Betriebsleiter geschult und Checklisten für jede Schicht erstellt. Jetzt verreise ich für zwei Wochen — und alles läuft.",
+  "n174": "Erster Urlaub seit 2 Jahren ohne Anrufe",
+  "n175": "TM",
+  "n176": "Timur",
+  "n177": "Café-Inhaber",
+  "n178": "Ich kam mit einer einzigen Frage zum Business-Review: Warum fehlt trotz guten Umsatzes immer Geld? In zwei Stunden haben wir die Unit Economics durchgearbeitet, drei Positionen auf der Speisekarte gefunden, die Verlust machten, und verstanden, wo die Marge wirklich liegt. Die Sitzung hat sich schon im ersten Monat bezahlt gemacht.",
+  "n179": "Verlustbringer gefunden, Marge +18 %",
+  "n180": "SL",
+  "n181": "Sophia",
+  "n182": "Restaurant-Inhaberin",
+  "n183": "Ich habe mit Andrei an meinem Befinden und an Verhandlungen gearbeitet. Das klingt abstrakt — aber das Ergebnis ist konkret. Ich habe eine Partnerschaft beendet, die ich zwei Jahre lang mitgeschleppt hatte und die ich nicht zu beenden wagte. Ich habe einen Vertrag mit einem Kunden abgeschlossen, der doppelt so groß ist wie alle bisherigen. Es stellte sich heraus, dass es nicht an den Fähigkeiten lag, sondern daran, wie ich mich präsentiere.",
+  "n184": "Vertrag abgeschlossen, 2× größer als der bisherige Höchstwert",
+  "n185": "AW",
+  "n186": "Alexej",
+  "n187": "Gründer einer Digitalagentur",
+  "n188": "Fragen",
+  "n189": "Was <span class=\"grad-text\">oft gefragt</span> wird",
+  "n190": "Deine Frage ist nicht dabei? Schreib mir auf Telegram — ich antworte persönlich.",
+  "n191": "Wie läuft das erste Gespräch ab?<span class=\"pm\"></span>",
+  "n192": "Ein kostenloses Gespräch von 30–40 Minuten. Wir klären, wo du jetzt stehst, was im Weg steht und was du erreichen willst. Ohne Verpflichtung — am Ende ist klar, ob eine weitere Zusammenarbeit sinnvoll ist.",
+  "n193": "Worin unterscheidet sich Mentoring von einem Kurs oder einer Beratung?<span class=\"pm\"></span>",
+  "n194": "Hier gibt es keine Lehrbücher und keine Standard-Ratschläge. Wir nehmen genau dein Unternehmen auseinander — seine DNA, sein Team, seinen Markt — und setzen gemeinsam konkrete Veränderungen um. Ich gehe neben dir, während du umsetzt, und steuere unterwegs nach.",
+  "n195": "Welches Format soll ich wählen?<span class=\"pm\"></span>",
+  "n196": "Wenn du bei einer konkreten Frage feststeckst — Business-Review. Wenn du ein System und den Weg aus dem Tagesgeschäft brauchst — Mentoring über 3 Monate. Wenn du eine Strategie für das Jahr brauchst — der VIP-Tag. Nicht sicher — mach die Express-Diagnose weiter oben oder wähle im Formular „Weiß ich noch nicht“.",
+  "n197": "Was bekomme ich am Ende?<span class=\"pm\"></span>",
+  "n198": "Keine Ratschläge, sondern fertige Systeme: eine Karte der Verluste und Wachstumspunkte, Abläufe, Checklisten, Skripte, ein Kennzahlen-Dashboard — das, was im Unternehmen bleibt und nach unseren Sitzungen weiter funktioniert.",
+  "n199": "Wie schnell antwortest du auf meine Anfrage?<span class=\"pm\"></span>",
+  "n200": "Innerhalb von 24 Stunden — ich schreibe dir, und wir vereinbaren einen Termin für das Gespräch.",
+  "n201": "Los geht’s",
+  "n202": "Wir analysieren<br>dein Unternehmen<br><span class=\"grad-text\">kostenlos</span>",
+  "n203": "Das erste Gespräch dauert 30 Minuten, ist kostenlos und unverbindlich. Wir betrachten deine Situation ehrlich: wo es hakt, was im Weg steht und ob eine weitere Zusammenarbeit sinnvoll ist.",
+  "n204": "Auf Telegram schreiben",
+  "n205": "Anfrage stellen",
+  "n206": "Ich antworte innerhalb von 24 Stunden, und wir vereinbaren einen Termin für das Gespräch",
+  "n207": "Name",
+  "n208": "Telegram / WhatsApp / Telefon",
+  "n209": "Kostenloses Erstgespräch (Kennenlernen)",
+  "n210": "Business-Review — Einzelsitzung",
+  "n211": "Mentoring über 3 Monate",
+  "n212": "VIP-Tag",
+  "n213": "Weiß ich noch nicht, ich möchte mich orientieren",
+  "n214": "Welches Format interessiert dich?",
+  "n215": "Kurz: Was machst du und was möchtest du verändern?",
+  "n216": "Anfrage senden <span class=\"arr\">→</span>",
+  "n217": "Mit dem Absenden des Formulars stimmst du der <a href=\"privacy.html\">Datenschutzerklärung</a> zu",
+  "n218": "Anfrage gesendet",
+  "n219": "Danke! Ich antworte innerhalb von 24 Stunden.",
+  "n220": "Andrei Yasinski",
+  "n221": "Datenschutzerklärung",
+  "n222": "© <span id=\"year\">2025</span> Helpstogrow. Alle Rechte vorbehalten.",
+  "p001": "Andrei Yasinski",
+  "p002": "← Zurück zur Website",
+  "p003": "Rechtliche Dokumente",
+  "p004": "Datenschutzerklärung",
+  "p005": "Zuletzt aktualisiert: 27. Mai 2026",
+  "p006": "Diese Datenschutzerklärung beschreibt, wie Andrei Yasinski (nachfolgend „Verantwortlicher“, „ich“, „wir“), tätig über die Website <strong>helpstogrow.com</strong>, personenbezogene Daten von Nutzern erhebt, verwendet und schützt — gemäß der Datenschutz-Grundverordnung (DSGVO, Verordnung (EU) 2016/679).",
+  "p007": "1. Wer ist der Verantwortliche",
+  "p008": "Verantwortlicher für die personenbezogenen Daten ist:",
+  "p009": "<strong>Name:</strong> Andrei Yasinski",
+  "p010": "<strong>Website:</strong> helpstogrow.com",
+  "p011": "<strong>E-Mail für datenschutzbezogene Anfragen:</strong> contact@helpstogrow.com",
+  "p012": "2. Welche Daten wir erheben",
+  "p013": "Wenn du das Kontaktformular auf der Website ausfüllst, erheben wir folgende Daten:",
+  "p014": "Name",
+  "p015": "Kontaktdaten: Telefonnummer, Telegram oder WhatsApp",
+  "p016": "Das Format der Zusammenarbeit, für das du dich interessierst",
+  "p017": "Angaben zu deinem Unternehmen und deinem Anliegen (sofern du sie gemacht hast)",
+  "p018": "Wir erheben keine besonderen Kategorien personenbezogener Daten (rassische oder ethnische Herkunft, politische Meinungen, Gesundheitsdaten usw.).",
+  "p019": "3. Wofür die Daten verwendet werden",
+  "p020": "Die erhobenen Daten werden ausschließlich verwendet für:",
+  "p021": "die Beantwortung deiner Anfrage und die Organisation des ersten Gesprächs",
+  "p022": "die Abstimmung der Bedingungen und des Formats der Zusammenarbeit",
+  "p023": "den Versand von Informationen zu Mentoring-Programmen (nur mit deiner Einwilligung)",
+  "p024": "Wir verwenden deine Daten nicht für automatisierte Entscheidungsfindung oder Profiling.",
+  "p025": "4. Rechtsgrundlage der Verarbeitung",
+  "p026": "Die Verarbeitung personenbezogener Daten erfolgt auf Grundlage von:",
+  "p027": "<strong>Einwilligung</strong> — du erteilst sie ausdrücklich beim Absenden des Formulars (Art. 6 Abs. 1 lit. a DSGVO)",
+  "p028": "<strong>vorvertraglichen Maßnahmen</strong> — zur Beantwortung deiner Anfrage zur Zusammenarbeit (Art. 6 Abs. 1 lit. b DSGVO)",
+  "p029": "5. Weitergabe von Daten an Dritte",
+  "p030": "Zur Verarbeitung der Kontaktformulare wird der Dienst <strong>Formspree</strong> (Formspree, Inc., USA) genutzt. Der Dienst verarbeitet die Daten gemäß seiner eigenen Datenschutzerklärung und erfüllt die Anforderungen der DSGVO.",
+  "p031": "Wir verkaufen, übermitteln oder offenbaren deine Daten nicht zu anderen Zwecken an Dritte.",
+  "p032": "6. Speicherdauer",
+  "p033": "Daten aus dem Kontaktformular werden nicht länger gespeichert, als es zur Erreichung des Erhebungszwecks erforderlich ist:",
+  "p034": "Daten potenzieller Kunden, mit denen keine Zusammenarbeit begonnen hat — bis zu <strong>6 Monate</strong>",
+  "p035": "Daten aktueller und ehemaliger Kunden — für die Dauer der Zusammenarbeit und <strong>3 Jahre</strong> nach deren Ende",
+  "p036": "Nach Ablauf dieser Frist werden die Daten unwiderruflich gelöscht.",
+  "p037": "7. Deine Rechte nach der DSGVO",
+  "p038": "Nach der DSGVO stehen dir folgende Rechte zu:",
+  "p039": "<strong>Auskunftsrecht</strong> — eine Kopie der von uns gespeicherten Daten zu verlangen",
+  "p040": "<strong>Recht auf Berichtigung</strong> — die Korrektur unrichtiger Daten zu verlangen",
+  "p041": "<strong>Recht auf Löschung</strong> („Recht auf Vergessenwerden“) — die Löschung deiner Daten zu verlangen",
+  "p042": "<strong>Recht auf Einschränkung der Verarbeitung</strong> — die Verwendung deiner Daten einzuschränken",
+  "p043": "<strong>Recht auf Datenübertragbarkeit</strong> — deine Daten in einem maschinenlesbaren Format zu erhalten",
+  "p044": "<strong>Recht auf Widerruf der Einwilligung</strong> — die Einwilligung jederzeit ohne Nachteile für dich zu widerrufen",
+  "p045": "<strong>Beschwerderecht</strong> — eine Beschwerde bei der Datenschutz-Aufsichtsbehörde deines Landes einzureichen",
+  "p046": "Um eines dieser Rechte auszuüben, schreibe uns an: <a href=\"mailto:contact@helpstogrow.com\">contact@helpstogrow.com</a>. Wir antworten innerhalb von 30 Tagen.",
+  "p047": "8. Cookies",
+  "p048": "Die Website verwendet derzeit keine Analyse- oder Marketing-Cookies. Es werden nur technisch notwendige Cookies für den ordnungsgemäßen Betrieb der Website eingesetzt.",
+  "p049": "Sollten Analyse-Tools (zum Beispiel Google Analytics) eingebunden werden, wird diese Erklärung aktualisiert und auf der Website erscheint ein Cookie-Einwilligungsbanner.",
+  "p050": "9. Datensicherheit",
+  "p051": "Wir treffen angemessene technische und organisatorische Maßnahmen, um deine Daten vor unbefugtem Zugriff, Veränderung, Offenlegung oder Zerstörung zu schützen. Die Website verwendet das HTTPS-Protokoll zur Verschlüsselung der übertragenen Daten.",
+  "p052": "10. Änderungen dieser Erklärung",
+  "p053": "Wir behalten uns vor, diese Datenschutzerklärung zu aktualisieren. Bei wesentlichen Änderungen wird das Datum der letzten Aktualisierung am Anfang des Dokuments angepasst. Wir empfehlen, diese Seite regelmäßig zu prüfen.",
+  "p054": "11. Kontakt",
+  "p055": "Wenn du Fragen oder Anliegen zur Verarbeitung deiner personenbezogenen Daten hast, kontaktiere uns bitte:",
+  "p056": "Website:",
+  "p057": "Andrei Yasinski",
+  "p058": "© <span id=\"y\"></span> Helpstogrow. Alle Rechte vorbehalten."
  }
 };
 var S = {
  "page.title": {
   "ru": "Helpstogrow — Андрей Ясинский · Наставник для предпринимателей",
   "uk": "Helpstogrow — Андрій Ясинський · Наставник для підприємців",
-  "pl": "Helpstogrow — Andrei Yasinski · Mentor dla przedsiębiorców"
+  "pl": "Helpstogrow — Andrei Yasinski · Mentor dla przedsiębiorców",
+  "en": "Helpstogrow — Andrei Yasinski · Mentor for entrepreneurs",
+  "de": "Helpstogrow — Andrei Yasinski · Mentor für Unternehmer"
  },
  "page.desc": {
   "ru": "Helpstogrow — наставничество для предпринимателей: диагностика бизнеса, процессы без вашего участия, продажи, дашборды и состояние собственника. Бесплатный разбор — 30 минут.",
   "uk": "Helpstogrow — наставництво для підприємців: діагностика бізнесу, процеси без вашої участі, продажі, дашборди та стан власника. Безкоштовний розбір — 30 хвилин.",
-  "pl": "Helpstogrow — mentoring dla przedsiębiorców: diagnostyka biznesu, procesy działające bez twojego udziału, sprzedaż, dashboardy i kondycja właściciela. Bezpłatna konsultacja — 30 minut."
+  "pl": "Helpstogrow — mentoring dla przedsiębiorców: diagnostyka biznesu, procesy działające bez twojego udziału, sprzedaż, dashboardy i kondycja właściciela. Bezpłatna konsultacja — 30 minut.",
+  "en": "Helpstogrow — mentoring for entrepreneurs: business diagnostics, processes that run without you, sales, dashboards and the owner’s well-being. Free review — 30 minutes.",
+  "de": "Helpstogrow — Mentoring für Unternehmer: Unternehmensdiagnose, Prozesse, die ohne dich laufen, Vertrieb, Dashboards und das Befinden des Inhabers. Kostenloses Erstgespräch — 30 Minuten."
  },
  "og.title": {
   "ru": "Helpstogrow — движок твоего бизнеса",
   "uk": "Helpstogrow — двигун твого бізнесу",
-  "pl": "Helpstogrow — silnik twojego biznesu"
+  "pl": "Helpstogrow — silnik twojego biznesu",
+  "en": "Helpstogrow — the engine of your business",
+  "de": "Helpstogrow — der Motor deines Unternehmens"
  },
  "og.desc": {
   "ru": "Процессы, которые работают без тебя. Наставничество для предпринимателей от Андрея Ясинского.",
   "uk": "Процеси, які працюють без тебе. Наставництво для підприємців від Андрія Ясинського.",
-  "pl": "Procesy, które działają bez ciebie. Mentoring dla przedsiębiorców od Andrei Yasinskiego."
+  "pl": "Procesy, które działają bez ciebie. Mentoring dla przedsiębiorców od Andrei Yasinskiego.",
+  "en": "Processes that work without you. Mentoring for entrepreneurs from Andrei Yasinski.",
+  "de": "Prozesse, die ohne dich funktionieren. Mentoring für Unternehmer von Andrei Yasinski."
  },
  "privacy.title": {
   "ru": "Политика конфиденциальности — Helpstogrow",
   "uk": "Політика конфіденційності — Helpstogrow",
-  "pl": "Polityka prywatności — Helpstogrow"
+  "pl": "Polityka prywatności — Helpstogrow",
+  "en": "Privacy Policy — Helpstogrow",
+  "de": "Datenschutzerklärung — Helpstogrow"
  },
  "h1.l1": {
   "ru": "Строим систему,",
   "uk": "Будуємо систему,",
-  "pl": "Budujemy system,"
+  "pl": "Budujemy system,",
+  "en": "We build a system",
+  "de": "Wir bauen ein System,"
  },
  "h1.l2": {
   "ru": "которая растёт",
   "uk": "яка росте",
-  "pl": "który rośnie"
+  "pl": "który rośnie",
+  "en": "that grows",
+  "de": "das wächst"
  },
  "h1.words": {
   "ru": [
@@ -620,82 +1198,124 @@ var S = {
    "szybciej",
    "spokojniej",
    "zyskowniej"
+  ],
+  "en": [
+   "without you",
+   "faster",
+   "more calmly",
+   "more profitably"
+  ],
+  "de": [
+   "ohne dich",
+   "schneller",
+   "ruhiger",
+   "profitabler"
   ]
  },
  "a.home": {
   "ru": "Helpstogrow — на главную",
   "uk": "Helpstogrow — на головну",
-  "pl": "Helpstogrow — strona główna"
+  "pl": "Helpstogrow — strona główna",
+  "en": "Helpstogrow — home",
+  "de": "Helpstogrow — zur Startseite"
  },
  "a.nav": {
   "ru": "Основная навигация",
   "uk": "Основна навігація",
-  "pl": "Nawigacja główna"
+  "pl": "Nawigacja główna",
+  "en": "Main navigation",
+  "de": "Hauptnavigation"
  },
  "a.search": {
   "ru": "Быстрая навигация",
   "uk": "Швидка навігація",
-  "pl": "Szybka nawigacja"
+  "pl": "Szybka nawigacja",
+  "en": "Quick navigation",
+  "de": "Schnellnavigation"
  },
  "a.theme": {
   "ru": "Переключить тему",
   "uk": "Перемкнути тему",
-  "pl": "Przełącz motyw"
+  "pl": "Przełącz motyw",
+  "en": "Switch theme",
+  "de": "Design wechseln"
  },
  "a.menu": {
   "ru": "Меню",
   "uk": "Меню",
-  "pl": "Menu"
+  "pl": "Menu",
+  "en": "Menu",
+  "de": "Menü"
  },
  "a.services": {
   "ru": "Услуги",
   "uk": "Послуги",
-  "pl": "Usługi"
+  "pl": "Usługi",
+  "en": "Services",
+  "de": "Leistungen"
  },
  "a.prev": {
   "ru": "Назад",
   "uk": "Назад",
-  "pl": "Wstecz"
+  "pl": "Wstecz",
+  "en": "Previous",
+  "de": "Zurück"
  },
  "a.next": {
   "ru": "Вперёд",
   "uk": "Вперед",
-  "pl": "Dalej"
+  "pl": "Dalej",
+  "en": "Next",
+  "de": "Weiter"
  },
  "a.reviews": {
   "ru": "Отзывы клиентов",
   "uk": "Відгуки клієнтів",
-  "pl": "Opinie klientów"
+  "pl": "Opinie klientów",
+  "en": "Client reviews",
+  "de": "Kundenstimmen"
  },
  "a.top": {
   "ru": "Наверх",
   "uk": "Нагору",
-  "pl": "Do góry"
+  "pl": "Do góry",
+  "en": "Back to top",
+  "de": "Nach oben"
  },
  "a.tg": {
   "ru": "Написать в Telegram",
   "uk": "Написати в Telegram",
-  "pl": "Napisz na Telegramie"
+  "pl": "Napisz na Telegramie",
+  "en": "Write on Telegram",
+  "de": "Auf Telegram schreiben"
  },
  "a.lang": {
   "ru": "Язык",
   "uk": "Мова",
-  "pl": "Język"
+  "pl": "Język",
+  "en": "Language",
+  "de": "Sprache"
  },
  "a.back": {
   "ru": "Вернуться на сайт",
   "uk": "Повернутися на сайт",
-  "pl": "Wróć na stronę"
+  "pl": "Wróć na stronę",
+  "en": "Back to the site",
+  "de": "Zurück zur Website"
  },
  "pal.ph": {
   "ru": "Куда перейти? Например: цены, отзывы, заявка…",
   "uk": "Куди перейти? Наприклад: ціни, відгуки, заявка…",
-  "pl": "Dokąd przejść? Np.: ceny, opinie, zgłoszenie…"
+  "pl": "Dokąd przejść? Np.: ceny, opinie, zgłoszenie…",
+  "en": "Where to? For example: prices, reviews, request…",
+  "de": "Wohin? Zum Beispiel: Preise, Stimmen, Anfrage…"
  },
  "pal.empty": {
   "ru": "Ничего не найдено",
   "uk": "Нічого не знайдено",
-  "pl": "Nic nie znaleziono"
+  "pl": "Nic nie znaleziono",
+  "en": "Nothing found",
+  "de": "Nichts gefunden"
  },
  "pal.types": {
   "ru": [
@@ -712,6 +1332,16 @@ var S = {
    "sekcja",
    "link",
    "akcja"
+  ],
+  "en": [
+   "section",
+   "link",
+   "action"
+  ],
+  "de": [
+   "Bereich",
+   "Link",
+   "Aktion"
   ]
  },
  "pal.titles": {
@@ -753,6 +1383,32 @@ var S = {
    "Zostaw zgłoszenie",
    "Napisz na Telegramie",
    "Zmień motyw"
+  ],
+  "en": [
+   "Expertise",
+   "Services",
+   "About me",
+   "How we work",
+   "Express diagnostic",
+   "Programs and prices",
+   "Reviews",
+   "Questions and answers",
+   "Leave a request",
+   "Write on Telegram",
+   "Switch theme"
+  ],
+  "de": [
+   "Expertise",
+   "Leistungen",
+   "Über mich",
+   "So arbeiten wir",
+   "Express-Diagnose",
+   "Programme und Preise",
+   "Referenzen",
+   "Fragen und Antworten",
+   "Anfrage senden",
+   "Auf Telegram schreiben",
+   "Design wechseln"
   ]
  },
  "pal.kw": {
@@ -794,6 +1450,32 @@ var S = {
    "kontakt formularz konsultacja zgłoszenie",
    "tg telegram",
    "jasny ciemny dark light motyw"
+  ],
+  "en": [
+   "areas dna processes bottlenecks",
+   "tools analysis crm dashboards sales scripts",
+   "andrei who experience",
+   "process stages steps",
+   "test quiz check diagnostics",
+   "formats cost price eur",
+   "clients results cases reviews",
+   "faq questions",
+   "contact get in touch form review",
+   "tg telegram",
+   "light dark theme"
+  ],
+  "de": [
+   "bereiche dna prozesse engpässe",
+   "werkzeuge analyse crm dashboards vertrieb skripte leistungen",
+   "andrei wer erfahrung über mich",
+   "ablauf prozess etappen schritte",
+   "test quiz prüfen diagnose",
+   "formate kosten preis preise eur programme",
+   "kunden ergebnisse fälle stimmen referenzen",
+   "faq fragen",
+   "kontakt formular erstgespräch anfrage",
+   "tg telegram",
+   "hell dunkel dark light design"
   ]
  },
  "marquee": {
@@ -832,87 +1514,143 @@ var S = {
    "Procedury",
    "Negocjacje",
    "Skalowanie"
+  ],
+  "en": [
+   "Business DNA",
+   "Processes",
+   "Bottlenecks",
+   "Sales department",
+   "Dashboards",
+   "Delegation",
+   "Owner’s energy",
+   "Procedures",
+   "Negotiation",
+   "Scaling"
+  ],
+  "de": [
+   "Business-DNA",
+   "Prozesse",
+   "Engpässe",
+   "Vertriebsabteilung",
+   "Dashboards",
+   "Delegation",
+   "Energie des Inhabers",
+   "Abläufe",
+   "Verhandlung",
+   "Skalierung"
   ]
  },
  "dots.aria": {
   "ru": "Отзыв {n}",
   "uk": "Відгук {n}",
-  "pl": "Opinia {n}"
+  "pl": "Opinia {n}",
+  "en": "Review {n}",
+  "de": "Referenz {n}"
  },
  "toast.fill": {
   "ru": "Заполни имя, контакт и формат",
   "uk": "Заповни ім’я, контакт і формат",
-  "pl": "Uzupełnij imię, kontakt i format"
+  "pl": "Uzupełnij imię, kontakt i format",
+  "en": "Please fill in your name, contact and format",
+  "de": "Bitte Name, Kontakt und Format ausfüllen"
  },
  "toast.err": {
   "ru": "Не получилось отправить — попробуй ещё раз или напиши в Telegram",
   "uk": "Не вдалося надіслати — спробуй ще раз або напиши в Telegram",
-  "pl": "Nie udało się wysłać — spróbuj ponownie lub napisz na Telegramie"
+  "pl": "Nie udało się wysłać — spróbuj ponownie lub napisz na Telegramie",
+  "en": "Could not send — try again or write on Telegram",
+  "de": "Senden fehlgeschlagen — versuche es erneut oder schreibe auf Telegram"
  },
  "btn.sending": {
   "ru": "Отправляем…",
   "uk": "Надсилаємо…",
-  "pl": "Wysyłamy…"
+  "pl": "Wysyłamy…",
+  "en": "Sending…",
+  "de": "Wird gesendet…"
  },
  "quiz.label": {
   "ru": "Диагностика",
   "uk": "Діагностика",
-  "pl": "Diagnostyka"
+  "pl": "Diagnostyka",
+  "en": "Diagnostics",
+  "de": "Diagnose"
  },
  "quiz.meta": {
   "ru": "7 вопросов · 1 минута",
   "uk": "7 запитань · 1 хвилина",
-  "pl": "7 pytań · 1 minuta"
+  "pl": "7 pytań · 1 minuta",
+  "en": "7 questions · 1 minute",
+  "de": "7 Fragen · 1 Minute"
  },
  "quiz.intro": {
   "ru": "Ответь на 7 коротких вопросов — получишь карту по четырём направлениям, слабую зону роста и рекомендацию по формату работы.",
   "uk": "Дай відповідь на 7 коротких запитань — отримаєш карту за чотирма напрямками, слабку зону зростання та рекомендацію щодо формату роботи.",
-  "pl": "Odpowiedz na 7 krótkich pytań — otrzymasz mapę w czterech obszarach, słaby punkt wzrostu i rekomendację formatu współpracy."
+  "pl": "Odpowiedz na 7 krótkich pytań — otrzymasz mapę w czterech obszarach, słaby punkt wzrostu i rekomendację formatu współpracy.",
+  "en": "Answer 7 short questions — you’ll get a map across four areas, your weakest growth zone and a recommendation for the format of work.",
+  "de": "Beantworte 7 kurze Fragen — du erhältst eine Karte zu vier Bereichen, deine schwächste Wachstumszone und eine Empfehlung für das passende Format."
  },
  "quiz.start": {
   "ru": "Начать",
   "uk": "Почати",
-  "pl": "Zacznij"
+  "pl": "Zacznij",
+  "en": "Start",
+  "de": "Starten"
  },
  "quiz.step": {
   "ru": "Вопрос {n} из {m}",
   "uk": "Запитання {n} з {m}",
-  "pl": "Pytanie {n} z {m}"
+  "pl": "Pytanie {n} z {m}",
+  "en": "Question {n} of {m}",
+  "de": "Frage {n} von {m}"
  },
  "quiz.result": {
   "ru": "Результат",
   "uk": "Результат",
-  "pl": "Wynik"
+  "pl": "Wynik",
+  "en": "Result",
+  "de": "Ergebnis"
  },
  "quiz.back": {
   "ru": "← Назад",
   "uk": "← Назад",
-  "pl": "← Wstecz"
+  "pl": "← Wstecz",
+  "en": "← Back",
+  "de": "← Zurück"
  },
  "quiz.again": {
   "ru": "Пройти заново",
   "uk": "Пройти знову",
-  "pl": "Przejdź ponownie"
+  "pl": "Przejdź ponownie",
+  "en": "Take it again",
+  "de": "Erneut durchführen"
  },
  "quiz.go": {
   "ru": "Обсудить результат",
   "uk": "Обговорити результат",
-  "pl": "Omówmy wynik"
+  "pl": "Omówmy wynik",
+  "en": "Discuss the result",
+  "de": "Ergebnis besprechen"
  },
  "quiz.weak": {
   "ru": "Слабая зона:",
   "uk": "Слабка зона:",
-  "pl": "Słaby punkt:"
+  "pl": "Słaby punkt:",
+  "en": "Weak zone:",
+  "de": "Schwachstelle:"
  },
  "quiz.rec": {
   "ru": "Рекомендуем:",
   "uk": "Рекомендуємо:",
-  "pl": "Polecamy:"
+  "pl": "Polecamy:",
+  "en": "We recommend:",
+  "de": "Wir empfehlen:"
  },
  "quiz.radar": {
   "ru": "Радар по четырём направлениям",
   "uk": "Радар за чотирма напрямками",
-  "pl": "Radar w czterech obszarach"
+  "pl": "Radar w czterech obszarach",
+  "en": "Radar chart across four areas",
+  "de": "Radar-Diagramm zu vier Bereichen"
  },
  "quiz.short": {
   "ru": [
@@ -932,6 +1670,18 @@ var S = {
    "Procesy",
    "Wąskie gardła",
    "Właściciel"
+  ],
+  "en": [
+   "DNA",
+   "Processes",
+   "Bottlenecks",
+   "Owner"
+  ],
+  "de": [
+   "DNA",
+   "Prozesse",
+   "Engpässe",
+   "Inhaber"
   ]
  },
  "quiz.names": {
@@ -952,6 +1702,18 @@ var S = {
    "Procesy i szkielet",
    "Wąskie gardła",
    "Kondycja właściciela"
+  ],
+  "en": [
+   "Business DNA",
+   "Processes and backbone",
+   "Bottlenecks",
+   "Owner’s well-being"
+  ],
+  "de": [
+   "Business-DNA",
+   "Prozesse und Rückgrat",
+   "Engpässe",
+   "Befinden des Inhabers"
   ]
  },
  "quiz.tips": {
@@ -972,6 +1734,18 @@ var S = {
    "Biznes jest zbyt mocno uzależniony od ciebie. Potrzebne są procedury, właściwe delegowanie i odpowiedzialność w poszczególnych obszarach.",
    "Pieniądze i czas uciekają w jednym lub dwóch miejscach. Punktowa diagnostyka zwykle daje najszybszy wzrost.",
    "Zasoby właściciela to główne ograniczenie wzrostu. Potrzebna jest praca z energią, skupieniem i negocjacjami."
+  ],
+  "en": [
+   "It’s worth reformulating your goals, business model and values — so that the business grows consciously, not by inertia.",
+   "The business depends on you too much. You need procedures, proper delegation and responsibility by area.",
+   "Money and time leak out in one or two places. Pinpoint diagnostics usually gives the fastest growth.",
+   "The owner’s resources are the main limit to growth. You need work on energy, focus and negotiation."
+  ],
+  "de": [
+   "Es lohnt sich, Ziele, Geschäftsmodell und Werte neu zu formulieren — damit das Unternehmen bewusst wächst und nicht aus Trägheit.",
+   "Dein Unternehmen hängt zu stark von dir ab. Es braucht klare Abläufe, richtiges Delegieren und Verantwortung nach Bereichen.",
+   "Geld und Zeit versickern an ein bis zwei Stellen. Gezielte Diagnose bringt meist das schnellste Wachstum.",
+   "Die Ressourcen des Inhabers sind die wichtigste Wachstumsgrenze. Nötig ist Arbeit an Energie, Fokus und Verhandlungen."
   ]
  },
  "quiz.heads": {
@@ -989,6 +1763,16 @@ var S = {
    "Fundament jest mocny — jest co wyszlifować",
    "Widać wyraźne punkty wzrostu",
    "Biznes zabiera ci zbyt dużo energii"
+  ],
+  "en": [
+   "The foundation is strong — there’s something to polish",
+   "There are clear growth points",
+   "The business drains too much energy from you"
+  ],
+  "de": [
+   "Das Fundament ist stark — es gibt noch etwas zu verfeinern",
+   "Es gibt klare Wachstumspunkte",
+   "Dein Unternehmen zieht zu viel Energie aus dir"
   ]
  },
  "quiz.recs": {
@@ -1003,17 +1787,29 @@ var S = {
   "pl": [
    "Konsultacja biznesowa",
    "Mentoring 3 miesiące"
+  ],
+  "en": [
+   "Business review",
+   "3-month mentoring"
+  ],
+  "de": [
+   "Business-Review",
+   "Mentoring über 3 Monate"
   ]
  },
  "quiz.summary": {
   "ru": "Индекс «здоровья»: {h}%. Слабая зона: {w}. Рекомендация: {r}.",
   "uk": "Індекс «здоров’я»: {h}%. Слабка зона: {w}. Рекомендація: {r}.",
-  "pl": "Indeks „zdrowia”: {h}%. Słaby punkt: {w}. Rekomendacja: {r}."
+  "pl": "Indeks „zdrowia”: {h}%. Słaby punkt: {w}. Rekomendacja: {r}.",
+  "en": "Health index: {h}%. Weak zone: {w}. Recommendation: {r}.",
+  "de": "Gesundheitsindex: {h} %. Schwachstelle: {w}. Empfehlung: {r}."
  },
  "quiz.msg": {
   "ru": "Прошёл(а) диагностику. {s}",
   "uk": "Пройшов(-ла) діагностику. {s}",
-  "pl": "Zrobiłem(-am) diagnostykę. {s}"
+  "pl": "Zrobiłem(-am) diagnostykę. {s}",
+  "en": "I took the diagnostic. {s}",
+  "de": "Ich habe die Diagnose durchgeführt. {s}"
  },
  "quiz.q": {
   "ru": [
@@ -1042,6 +1838,24 @@ var S = {
    "Jak podejmujesz decyzje: na podstawie danych czy wrażeń?",
    "Ile czasu poświęcasz na bieżące operacje zamiast na strategię?",
    "Jak się czujesz: energia, skupienie, pewność w negocjacjach?"
+  ],
+  "en": [
+   "How clearly are the goals and model of your business formulated for the coming year?",
+   "What will happen to the business if you go away for two weeks with no contact?",
+   "How well are procedures, checklists and areas of responsibility documented?",
+   "Do you know where the business loses the most money and time?",
+   "How do you make decisions: based on data or on feelings?",
+   "How much of your time goes to day-to-day operations rather than strategy?",
+   "How are you feeling: energy, focus, confidence in negotiations?"
+  ],
+  "de": [
+   "Wie klar sind die Ziele und das Modell deines Unternehmens für das kommende Jahr formuliert?",
+   "Was passiert mit deinem Unternehmen, wenn du zwei Wochen ohne Erreichbarkeit verreist?",
+   "Wie gut sind Abläufe, Checklisten und Verantwortungsbereiche dokumentiert?",
+   "Weißt du, wo dein Unternehmen das meiste Geld und die meiste Zeit verliert?",
+   "Wie triffst du Entscheidungen: auf Basis von Daten oder nach Gefühl?",
+   "Wie viel deiner Zeit steckt im Tagesgeschäft statt in der Strategie?",
+   "Wie fühlst du dich: Energie, Fokus, Sicherheit in Verhandlungen?"
   ]
  },
  "quiz.o": {
@@ -1176,6 +1990,94 @@ var S = {
     "Często czuję zmęczenie",
     "Jestem blisko wypalenia"
    ]
+  ],
+  "en": [
+   [
+    "Everything is written down and clear to the team",
+    "There is a general understanding, but no details",
+    "The goals exist only in my head",
+    "We live by the situation"
+   ],
+   [
+    "Everything will keep working",
+    "There will be minor glitches",
+    "A lot will come to a halt",
+    "Chaos will begin"
+   ],
+   [
+    "Everything key is documented",
+    "Partly documented",
+    "Something exists, but it doesn’t work",
+    "Everything rests on people’s memory"
+   ],
+   [
+    "Yes, I have a map of losses with numbers",
+    "I suspect, but without numbers",
+    "I feel we’re losing, but I can’t see where",
+    "No, I haven’t analyzed it"
+   ],
+   [
+    "A dashboard with real-time metrics",
+    "I look at reports sometimes",
+    "Mostly intuition",
+    "I learn the numbers when it’s already too late"
+   ],
+   [
+    "Less than 20%",
+    "About half",
+    "Most of my time",
+    "Almost all my time I put out fires"
+   ],
+   [
+    "Full of energy and focus",
+    "I have dips",
+    "I often feel tired",
+    "I’m close to burnout"
+   ]
+  ],
+  "de": [
+   [
+    "Alles ist aufgeschrieben und für das Team verständlich",
+    "Es gibt ein grobes Verständnis, aber ohne Details",
+    "Die Ziele existieren nur in meinem Kopf",
+    "Wir leben von Situation zu Situation"
+   ],
+   [
+    "Alles läuft weiter",
+    "Es gibt kleine Störungen",
+    "Vieles kommt zum Stillstand",
+    "Es bricht Chaos aus"
+   ],
+   [
+    "Alles Wesentliche ist dokumentiert",
+    "Teilweise dokumentiert",
+    "Etwas gibt es, aber es funktioniert nicht",
+    "Alles beruht auf dem Gedächtnis der Leute"
+   ],
+   [
+    "Ja, ich habe eine Verlustkarte mit Zahlen",
+    "Ich ahne es, aber ohne Zahlen",
+    "Ich spüre, dass wir verlieren, sehe aber nicht wo",
+    "Nein, das habe ich nicht analysiert"
+   ],
+   [
+    "Ein Dashboard mit Kennzahlen in Echtzeit",
+    "Ich schaue manchmal in Berichte",
+    "Meistens Intuition",
+    "Ich erfahre die Zahlen, wenn es schon zu spät ist"
+   ],
+   [
+    "Weniger als 20 %",
+    "Etwa die Hälfte",
+    "Den Großteil der Zeit",
+    "Fast die ganze Zeit lösche ich Brände"
+   ],
+   [
+    "Voller Energie und Fokus",
+    "Es gibt Tiefs",
+    "Ich fühle mich oft müde",
+    "Ich bin nah am Burnout"
+   ]
   ]
  }
 };
@@ -1185,10 +2087,10 @@ var S = {
    DOM structure, classes and ids are never touched — only text / inline markup of tagged elements. */
 
   'use strict';
-  var LANGS = ['ru', 'uk', 'pl'];
-  var LABEL = { ru: 'RU', uk: 'UA', pl: 'PL' };
-  var HTML_LANG = { ru: 'ru', uk: 'uk', pl: 'pl' };
-  var OG_LOCALE = { ru: 'ru_RU', uk: 'uk_UA', pl: 'pl_PL' };
+  var LANGS = ['ru', 'uk', 'pl', 'en', 'de'];
+  var LABEL = { ru: 'RU', uk: 'UA', pl: 'PL', en: 'EN', de: 'DE' };
+  var HTML_LANG = { ru: 'ru', uk: 'uk', pl: 'pl', en: 'en', de: 'de' };
+  var OG_LOCALE = { ru: 'ru_RU', uk: 'uk_UA', pl: 'pl_PL', en: 'en_US', de: 'de_DE' };
   var ATTRS = [
     ['.nav > .logo', 'aria-label', 'a.home'],
     ['.nav > nav', 'aria-label', 'a.nav'],
@@ -1230,7 +2132,7 @@ var S = {
   }
 
   function detect() {
-    var q = /[?&]lang=(ru|uk|pl)\b/.exec(location.search);
+    var q = /[?&]lang=(ru|uk|pl|en|de)\b/.exec(location.search);
     if (q) return q[1];
     var saved = store('htg-lang');
     if (saved && LANGS.indexOf(saved) > -1) return saved;
