@@ -71,27 +71,39 @@
     <svg aria-hidden="true"><use href="#mark"/></svg>
     <span class="logo-text">
       <span class="logo-name">Helpstogrow</span>
-      <span class="logo-sub">Андрей Ясинский</span>
+      <span class="logo-sub" data-i18n="n001">Андрей Ясинский</span>
     </span>
   </a>
   <nav aria-label="Основная навигация">
     <ul class="nav-links" id="navLinks">
-      <li><a href="#pillars">Экспертиза</a></li>
-      <li><a href="#services">Услуги</a></li>
-      <li><a href="#about">Обо мне</a></li>
-      <li><a href="#process">Процесс</a></li>
-      <li><a href="#diagnostic">Диагностика</a></li>
-      <li><a href="#programs">Программы</a></li>
-      <li><a href="#reviews">Отзывы</a></li>
+      <li><a href="#pillars" data-i18n="n002">Экспертиза</a></li>
+      <li><a href="#services" data-i18n="n003">Услуги</a></li>
+      <li><a href="#about" data-i18n="n004">Обо мне</a></li>
+      <li><a href="#process" data-i18n="n005">Процесс</a></li>
+      <li><a href="#diagnostic" data-i18n="n006">Диагностика</a></li>
+      <li><a href="#programs" data-i18n="n007">Программы</a></li>
+      <li><a href="#reviews" data-i18n="n008">Отзывы</a></li>
     </ul>
   </nav>
   <div class="nav-right">
-    <button class="icon-btn kbd-btn" id="palBtn" aria-label="Быстрая навигация"><span>Поиск</span><kbd>Ctrl K</kbd></button>
+    <div class="lang" id="lang">
+      <button class="lang-btn" id="langBtn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="langMenu" aria-label="Язык">
+        <svg class="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z"/></svg>
+        <span class="lang-code" id="langCode">RU</span>
+        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <ul class="lang-menu" id="langMenu" role="listbox" aria-label="Язык">
+        <li role="option" tabindex="-1" data-lang="ru" aria-selected="true"><span class="lc">RU</span><span class="ln">Русский</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></li>
+        <li role="option" tabindex="-1" data-lang="uk" aria-selected="false"><span class="lc">UA</span><span class="ln">Українська</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></li>
+        <li role="option" tabindex="-1" data-lang="pl" aria-selected="false"><span class="lc">PL</span><span class="ln">Polski</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></li>
+      </ul>
+    </div>
+    <button class="icon-btn kbd-btn" id="palBtn" aria-label="Быстрая навигация"><span data-i18n="n009">Поиск</span><kbd>Ctrl K</kbd></button>
     <button class="icon-btn theme-toggle" id="themeBtn" aria-label="Переключить тему">
       <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
       <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
     </button>
-    <a href="#contact" class="btn btn-primary magnetic">Заказать разбор</a>
+    <a href="#contact" class="btn btn-primary magnetic" data-i18n="n010">Заказать разбор</a>
     <button class="icon-btn burger" id="burger" aria-label="Меню" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg>
     </button>
@@ -99,14 +111,14 @@
 </header>
 
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#pillars">Экспертиза</a>
-  <a href="#services">Услуги</a>
-  <a href="#about">Обо мне</a>
-  <a href="#process">Процесс</a>
-  <a href="#diagnostic">Диагностика</a>
-  <a href="#programs">Программы</a>
-  <a href="#reviews">Отзывы</a>
-  <a href="#contact" class="grad-text">Заказать разбор →</a>
+  <a href="#pillars" data-i18n="n011">Экспертиза</a>
+  <a href="#services" data-i18n="n012">Услуги</a>
+  <a href="#about" data-i18n="n013">Обо мне</a>
+  <a href="#process" data-i18n="n014">Процесс</a>
+  <a href="#diagnostic" data-i18n="n015">Диагностика</a>
+  <a href="#programs" data-i18n="n016">Программы</a>
+  <a href="#reviews" data-i18n="n017">Отзывы</a>
+  <a href="#contact" class="grad-text" data-i18n="n018">Заказать разбор →</a>
 </div>
 
 <main id="top">
@@ -117,7 +129,7 @@
   <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
   <div class="container hero-grid">
     <div>
-      <span class="badge"><i class="live"></i> Наставник для предпринимателей</span>
+      <span class="badge" data-i18n="n019" data-i18n-html><i class="live"></i> Наставник для предпринимателей</span>
       <h1 id="heroTitle">
         <span class="w"><span style="--i:0">Строим</span></span>
         <span class="w"><span style="--i:1">систему,</span></span><br>
@@ -125,23 +137,23 @@
         <span class="w"><span style="--i:3">растёт</span></span><br>
         <span class="w"><span style="--i:4"><span class="rotator grad-text" id="rotator" data-words="без тебя|быстрее|спокойнее|прибыльнее">без тебя</span><span class="rotator-cursor"></span></span></span>
       </h1>
-      <p class="hero-desc">Помогаю предпринимателям выстроить процессы, найти и устранить узкие горлышки — и вырасти не надрываясь, а с энергией и ясной картиной бизнеса.</p>
+      <p class="hero-desc" data-i18n="n020">Помогаю предпринимателям выстроить процессы, найти и устранить узкие горлышки — и вырасти не надрываясь, а с энергией и ясной картиной бизнеса.</p>
       <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary magnetic">Бесплатный разбор <span class="arr">→</span></a>
-        <a href="#diagnostic" class="btn btn-ghost magnetic">Пройти диагностику</a>
+        <a href="#contact" class="btn btn-primary magnetic" data-i18n="n021" data-i18n-html>Бесплатный разбор <span class="arr">→</span></a>
+        <a href="#diagnostic" class="btn btn-ghost magnetic" data-i18n="n022">Пройти диагностику</a>
       </div>
       <div class="chips">
-        <span class="chip">ДНК бизнеса</span>
-        <span class="chip">Процессы и системы</span>
-        <span class="chip">Состояние собственника</span>
-        <span class="chip">Энергия и эффективность</span>
+        <span class="chip" data-i18n="n023">ДНК бизнеса</span>
+        <span class="chip" data-i18n="n024">Процессы и системы</span>
+        <span class="chip" data-i18n="n025">Состояние собственника</span>
+        <span class="chip" data-i18n="n026">Энергия и эффективность</span>
       </div>
     </div>
 
     <div class="hero-card tilt" data-tilt>
-      <span class="float-tag t1"><i></i> Выход из операционки</span>
-      <span class="float-tag t2"><i></i> Команда без хаоса</span>
-      <div class="hc-top"><span>Рост выручки клиентов</span><b>+180%</b></div>
+      <span class="float-tag t1" data-i18n="n027" data-i18n-html><i></i> Выход из операционки</span>
+      <span class="float-tag t2" data-i18n="n028" data-i18n-html><i></i> Команда без хаоса</span>
+      <div class="hc-top"><span data-i18n="n029">Рост выручки клиентов</span><b>+180%</b></div>
       <svg class="spark" viewBox="0 0 320 130" fill="none" aria-hidden="true">
         <defs>
           <linearGradient id="sparkG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8E7CFF"/><stop offset=".55" stop-color="#5CE1E6"/><stop offset="1" stop-color="#B8FF5C"/></linearGradient>
@@ -152,9 +164,9 @@
         <circle class="pt" cx="300" cy="18" r="6"/>
       </svg>
       <div class="hc-stats">
-        <div class="hc-stat"><strong data-count="100" data-suffix="+">100+</strong><span>предпринимателей</span></div>
-        <div class="hc-stat"><strong data-count="2.8" data-prefix="×" data-dec="1">×2.8</strong><span>средний рост выручки</span></div>
-        <div class="hc-stat"><strong data-count="11" data-suffix=" лет">11 лет</strong><span>в бизнесе</span></div>
+        <div class="hc-stat"><strong data-count="100" data-suffix="+">100+</strong><span data-i18n="n030">предпринимателей</span></div>
+        <div class="hc-stat"><strong data-count="2.8" data-prefix="×" data-dec="1">×2.8</strong><span data-i18n="n031">средний рост выручки</span></div>
+        <div class="hc-stat"><strong data-count="11" data-suffix=" лет" data-i18n="n032">11 лет</strong><span data-i18n="n033">в бизнесе</span></div>
       </div>
     </div>
   </div>
@@ -170,38 +182,38 @@
   <div class="container">
     <div class="sec-head">
       <div data-reveal>
-        <span class="eyebrow">Экспертиза</span>
-        <h2 class="h2">Четыре направления,<br>которые <span class="grad-text">меняют бизнес</span><br>изнутри</h2>
+        <span class="eyebrow" data-i18n="n034">Экспертиза</span>
+        <h2 class="h2" data-i18n="n035" data-i18n-html>Четыре направления,<br>которые <span class="grad-text">меняют бизнес</span><br>изнутри</h2>
       </div>
     </div>
     <div class="bento">
       <article class="card pillar tilt" data-spot data-tilt data-reveal>
         <span class="p-num">01</span>
         <div class="p-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 3c4 4 10 6 14 10-4 4-10 6-14 10 4 4 10 4 14 6M23 3c-4 4-10 6-14 10 4 4 10 6 14 10-4 4-10 4-14 6" opacity=".9"/></svg></div>
-        <h3>ДНК бизнеса</h3>
-        <p>Разбираем фундамент: ценности, смысл, структуру. Находим, что в основе бизнеса работает — а что давно устарело и тянет вниз. Строим то, что живёт без постоянного ручного управления.</p>
-        <div class="tags"><span class="tag">Бизнес-модель</span><span class="tag">Цели</span><span class="tag">Структура</span><span class="tag">Устойчивость</span></div>
+        <h3 data-i18n="n036">ДНК бизнеса</h3>
+        <p data-i18n="n037">Разбираем фундамент: ценности, смысл, структуру. Находим, что в основе бизнеса работает — а что давно устарело и тянет вниз. Строим то, что живёт без постоянного ручного управления.</p>
+        <div class="tags"><span class="tag" data-i18n="n038">Бизнес-модель</span><span class="tag" data-i18n="n039">Цели</span><span class="tag" data-i18n="n040">Структура</span><span class="tag" data-i18n="n041">Устойчивость</span></div>
       </article>
       <article class="card pillar tilt" data-spot data-tilt data-reveal style="--d:.08s">
         <span class="p-num">02</span>
         <div class="p-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="6" r="3"/><circle cx="6" cy="25" r="3"/><circle cx="26" cy="25" r="3"/><path d="M16 9v6M16 15L7 22M16 15l9 7"/></svg></div>
-        <h3>Процессы и скелет</h3>
-        <p>Выстраиваем систему, которая работает без тебя. Прописываем регламенты, выстраиваем цепочки, делегируем правильно. Бизнес перестаёт зависеть от твоего присутствия каждую минуту.</p>
-        <div class="tags"><span class="tag">Регламенты</span><span class="tag">Делегирование</span><span class="tag">Автоматизация</span><span class="tag">Команда</span></div>
+        <h3 data-i18n="n042">Процессы и скелет</h3>
+        <p data-i18n="n043">Выстраиваем систему, которая работает без тебя. Прописываем регламенты, выстраиваем цепочки, делегируем правильно. Бизнес перестаёт зависеть от твоего присутствия каждую минуту.</p>
+        <div class="tags"><span class="tag" data-i18n="n044">Регламенты</span><span class="tag" data-i18n="n045">Делегирование</span><span class="tag" data-i18n="n046">Автоматизация</span><span class="tag" data-i18n="n047">Команда</span></div>
       </article>
       <article class="card pillar tilt" data-spot data-tilt data-reveal>
         <span class="p-num">03</span>
         <div class="p-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h22l-8 11v9l-6 4V15z"/></svg></div>
-        <h3>Узкие горлышки</h3>
-        <p>Диагностируем, где бизнес теряет деньги, время и энергию. Находим узкое место — и устраняем его точечно. Часто одно изменение даёт рост, который не давали годы усилий.</p>
-        <div class="tags"><span class="tag">Анализ потерь</span><span class="tag">Диагностика</span><span class="tag">Быстрые точки роста</span></div>
+        <h3 data-i18n="n048">Узкие горлышки</h3>
+        <p data-i18n="n049">Диагностируем, где бизнес теряет деньги, время и энергию. Находим узкое место — и устраняем его точечно. Часто одно изменение даёт рост, который не давали годы усилий.</p>
+        <div class="tags"><span class="tag" data-i18n="n050">Анализ потерь</span><span class="tag" data-i18n="n051">Диагностика</span><span class="tag" data-i18n="n052">Быстрые точки роста</span></div>
       </article>
       <article class="card pillar tilt" data-spot data-tilt data-reveal style="--d:.08s">
         <span class="p-num">04</span>
         <div class="p-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3L6 18h9l-2 11 13-16h-9z"/></svg></div>
-        <h3>Состояние собственника</h3>
-        <p>Работаем над тобой: энергия, фокус, самопрезентация, переговоры. Потому что бизнес растёт ровно настолько, насколько растёт его владелец. Убираем то, что тебя сдерживает внутри.</p>
-        <div class="tags"><span class="tag">Энергия</span><span class="tag">Переговоры</span><span class="tag">Самопрезентация</span><span class="tag">Эффективность</span></div>
+        <h3 data-i18n="n053">Состояние собственника</h3>
+        <p data-i18n="n054">Работаем над тобой: энергия, фокус, самопрезентация, переговоры. Потому что бизнес растёт ровно настолько, насколько растёт его владелец. Убираем то, что тебя сдерживает внутри.</p>
+        <div class="tags"><span class="tag" data-i18n="n055">Энергия</span><span class="tag" data-i18n="n056">Переговоры</span><span class="tag" data-i18n="n057">Самопрезентация</span><span class="tag" data-i18n="n058">Эффективность</span></div>
       </article>
     </div>
   </div>
@@ -212,56 +224,56 @@
   <div class="container">
     <div class="sec-head">
       <div data-reveal>
-        <span class="eyebrow">Конкретные инструменты</span>
-        <h2 class="h2">Что именно мы<br><span class="grad-text">делаем</span> вместе</h2>
+        <span class="eyebrow" data-i18n="n059">Конкретные инструменты</span>
+        <h2 class="h2" data-i18n="n060" data-i18n-html>Что именно мы<br><span class="grad-text">делаем</span> вместе</h2>
       </div>
-      <p class="lead" data-reveal>Каждый инструмент — это конкретный результат, который остаётся в бизнесе после работы. Не советы и рекомендации, а готовые системы, которые начинают работать сразу.</p>
+      <p class="lead" data-reveal data-i18n="n061">Каждый инструмент — это конкретный результат, который остаётся в бизнесе после работы. Не советы и рекомендации, а готовые системы, которые начинают работать сразу.</p>
     </div>
     <div class="tabs" data-reveal>
       <div class="tab-list" role="tablist" aria-label="Услуги">
-        <button class="tab" role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true"><span class="n">01</span><span class="t">Анализ бизнеса</span><span class="e">🔬</span></button>
-        <button class="tab" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" tabindex="-1"><span class="n">02</span><span class="t">Подбор инструментов</span><span class="e">🧰</span></button>
-        <button class="tab" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1"><span class="n">03</span><span class="t">Дашборды для управления</span><span class="e">📊</span></button>
-        <button class="tab" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1"><span class="n">04</span><span class="t">Отдел продаж</span><span class="e">🎯</span></button>
-        <button class="tab" role="tab" id="tab-4" aria-controls="panel-4" aria-selected="false" tabindex="-1"><span class="n">05</span><span class="t">Процессы взаимодействия</span><span class="e">🔗</span></button>
-        <button class="tab" role="tab" id="tab-5" aria-controls="panel-5" aria-selected="false" tabindex="-1"><span class="n">06</span><span class="t">Чек-листы и скрипты</span><span class="e">✅</span></button>
+        <button class="tab" role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true"><span class="n">01</span><span class="t" data-i18n="n062">Анализ бизнеса</span><span class="e">🔬</span></button>
+        <button class="tab" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" tabindex="-1"><span class="n">02</span><span class="t" data-i18n="n063">Подбор инструментов</span><span class="e">🧰</span></button>
+        <button class="tab" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1"><span class="n">03</span><span class="t" data-i18n="n064">Дашборды для управления</span><span class="e">📊</span></button>
+        <button class="tab" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1"><span class="n">04</span><span class="t" data-i18n="n065">Отдел продаж</span><span class="e">🎯</span></button>
+        <button class="tab" role="tab" id="tab-4" aria-controls="panel-4" aria-selected="false" tabindex="-1"><span class="n">05</span><span class="t" data-i18n="n066">Процессы взаимодействия</span><span class="e">🔗</span></button>
+        <button class="tab" role="tab" id="tab-5" aria-controls="panel-5" aria-selected="false" tabindex="-1"><span class="n">06</span><span class="t" data-i18n="n067">Чек-листы и скрипты</span><span class="e">✅</span></button>
       </div>
       <div>
         <div class="card panel active" role="tabpanel" id="panel-0" aria-labelledby="tab-0" data-spot>
           <div class="big-e">🔬</div>
-          <h3>Анализ <span class="grad-text">бизнеса</span></h3>
-          <p>Глубокая диагностика: смотрим на бизнес как врач, а не как менеджер. Цифры, процессы, команда, продукт, рынок — всё в одной картине. Находим, где реально теряются деньги и энергия.</p>
-          <ul class="checks"><li>Финансовая модель и unit-экономика</li><li>Аудит воронки продаж и конверсий</li><li>Анализ команды и зон ответственности</li><li>Карта потерь и точек роста</li></ul>
+          <h3 data-i18n="n068" data-i18n-html>Анализ <span class="grad-text">бизнеса</span></h3>
+          <p data-i18n="n069">Глубокая диагностика: смотрим на бизнес как врач, а не как менеджер. Цифры, процессы, команда, продукт, рынок — всё в одной картине. Находим, где реально теряются деньги и энергия.</p>
+          <ul class="checks"><li data-i18n="n070">Финансовая модель и unit-экономика</li><li data-i18n="n071">Аудит воронки продаж и конверсий</li><li data-i18n="n072">Анализ команды и зон ответственности</li><li data-i18n="n073">Карта потерь и точек роста</li></ul>
         </div>
         <div class="card panel" role="tabpanel" id="panel-1" aria-labelledby="tab-1" data-spot hidden>
           <div class="big-e">🧰</div>
-          <h3>Подбор <span class="grad-text">инструментов</span></h3>
-          <p>Не навязываю модные сервисы — подбираю то, что подходит именно тебе: по масштабу, бюджету и задачам. CRM, таск-менеджеры, аналитика, коммуникации — собираем стек, который работает.</p>
-          <ul class="checks"><li>Аудит текущего tech-стека</li><li>Подбор CRM и систем управления</li><li>Настройка аналитики и отчётности</li><li>Интеграция инструментов между собой</li></ul>
+          <h3 data-i18n="n074" data-i18n-html>Подбор <span class="grad-text">инструментов</span></h3>
+          <p data-i18n="n075">Не навязываю модные сервисы — подбираю то, что подходит именно тебе: по масштабу, бюджету и задачам. CRM, таск-менеджеры, аналитика, коммуникации — собираем стек, который работает.</p>
+          <ul class="checks"><li data-i18n="n076">Аудит текущего tech-стека</li><li data-i18n="n077">Подбор CRM и систем управления</li><li data-i18n="n078">Настройка аналитики и отчётности</li><li data-i18n="n079">Интеграция инструментов между собой</li></ul>
         </div>
         <div class="card panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" data-spot hidden>
           <div class="big-e">📊</div>
-          <h3>Дашборды для <span class="grad-text">управления</span></h3>
-          <p>Создаём единую панель управления бизнесом: ключевые метрики в реальном времени, без excel-таблиц и звонков «а как у нас дела?». Принимаешь решения на основе данных, а не ощущений.</p>
-          <ul class="checks"><li>Определение ключевых метрик (KPI)</li><li>Построение операционного дашборда</li><li>Финансовый и управленческий учёт</li><li>Автоматизация сбора данных</li></ul>
+          <h3 data-i18n="n080" data-i18n-html>Дашборды для <span class="grad-text">управления</span></h3>
+          <p data-i18n="n081">Создаём единую панель управления бизнесом: ключевые метрики в реальном времени, без excel-таблиц и звонков «а как у нас дела?». Принимаешь решения на основе данных, а не ощущений.</p>
+          <ul class="checks"><li data-i18n="n082">Определение ключевых метрик (KPI)</li><li data-i18n="n083">Построение операционного дашборда</li><li data-i18n="n084">Финансовый и управленческий учёт</li><li data-i18n="n085">Автоматизация сбора данных</li></ul>
         </div>
         <div class="card panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" data-spot hidden>
           <div class="big-e">🎯</div>
-          <h3>Отдел <span class="grad-text">продаж</span></h3>
-          <p>Строим отдел продаж с нуля или реструктурируем существующий. Воронка, скрипты, KPI, мотивация, найм. Продажи перестают зависеть от одного «звёздного» менеджера или от тебя лично.</p>
-          <ul class="checks"><li>Структура и роли в отделе</li><li>Воронка и CRM-процесс</li><li>Система мотивации и KPI</li><li>Найм и онбординг менеджеров</li></ul>
+          <h3 data-i18n="n086" data-i18n-html>Отдел <span class="grad-text">продаж</span></h3>
+          <p data-i18n="n087">Строим отдел продаж с нуля или реструктурируем существующий. Воронка, скрипты, KPI, мотивация, найм. Продажи перестают зависеть от одного «звёздного» менеджера или от тебя лично.</p>
+          <ul class="checks"><li data-i18n="n088">Структура и роли в отделе</li><li data-i18n="n089">Воронка и CRM-процесс</li><li data-i18n="n090">Система мотивации и KPI</li><li data-i18n="n091">Найм и онбординг менеджеров</li></ul>
         </div>
         <div class="card panel" role="tabpanel" id="panel-4" aria-labelledby="tab-4" data-spot hidden>
           <div class="big-e">🔗</div>
-          <h3>Процессы <span class="grad-text">взаимодействия</span></h3>
-          <p>Прописываем как люди и отделы работают вместе: кто за что отвечает, как передаются задачи, где принимаются решения. Убираем дублирование, конфликты зон и «я думал, это не моё».</p>
-          <ul class="checks"><li>Карта взаимодействия подразделений</li><li>Матрица ответственности (RACI)</li><li>Регламенты передачи задач</li><li>Точки принятия решений</li></ul>
+          <h3 data-i18n="n092" data-i18n-html>Процессы <span class="grad-text">взаимодействия</span></h3>
+          <p data-i18n="n093">Прописываем как люди и отделы работают вместе: кто за что отвечает, как передаются задачи, где принимаются решения. Убираем дублирование, конфликты зон и «я думал, это не моё».</p>
+          <ul class="checks"><li data-i18n="n094">Карта взаимодействия подразделений</li><li data-i18n="n095">Матрица ответственности (RACI)</li><li data-i18n="n096">Регламенты передачи задач</li><li data-i18n="n097">Точки принятия решений</li></ul>
         </div>
         <div class="card panel" role="tabpanel" id="panel-5" aria-labelledby="tab-5" data-spot hidden>
           <div class="big-e">✅</div>
-          <h3>Чек-листы и <span class="grad-text">скрипты</span></h3>
-          <p>Превращаем экспертизу в документы. Чек-листы для повторяющихся процессов, скрипты для продаж и переговоров, инструкции для команды. Бизнес перестаёт зависеть от памяти конкретных людей.</p>
-          <ul class="checks"><li>Скрипты продаж и переговоров</li><li>Чек-листы приёмки и контроля</li><li>Инструкции для новых сотрудников</li><li>База знаний и регламенты</li></ul>
+          <h3 data-i18n="n098" data-i18n-html>Чек-листы и <span class="grad-text">скрипты</span></h3>
+          <p data-i18n="n099">Превращаем экспертизу в документы. Чек-листы для повторяющихся процессов, скрипты для продаж и переговоров, инструкции для команды. Бизнес перестаёт зависеть от памяти конкретных людей.</p>
+          <ul class="checks"><li data-i18n="n100">Скрипты продаж и переговоров</li><li data-i18n="n101">Чек-листы приёмки и контроля</li><li data-i18n="n102">Инструкции для новых сотрудников</li><li data-i18n="n103">База знаний и регламенты</li></ul>
         </div>
       </div>
     </div>
@@ -272,18 +284,18 @@
 <section id="about">
   <div class="container about-grid">
     <div class="about-sticky" data-reveal>
-      <span class="eyebrow">Кто я</span>
-      <h2 class="h2">Практик, <span class="grad-text">с опытом с полей,</span> понимающий разницу между знаниями и навыками.</h2>
-      <blockquote class="quote">Бизнес — это организм. Он должен дышать. Моя задача — научить его это делать автономно, без твоего участия в каждом процессе. Владелец должен видеть картину целиком, а не тушить ежедневные пожары операционки.</blockquote>
+      <span class="eyebrow" data-i18n="n104">Кто я</span>
+      <h2 class="h2" data-i18n="n105" data-i18n-html>Практик, <span class="grad-text">с опытом с полей,</span> понимающий разницу между знаниями и навыками.</h2>
+      <blockquote class="quote" data-i18n="n106">Бизнес — это организм. Он должен дышать. Моя задача — научить его это делать автономно, без твоего участия в каждом процессе. Владелец должен видеть картину целиком, а не тушить ежедневные пожары операционки.</blockquote>
     </div>
     <div class="about-body">
-      <p data-reveal><strong>Синтез большого опыта работы в найме и предпринимательства.</strong> Строил бизнесы сам — с нуля, на свои, без связей. Прошёл через хаос операционки, команды без регламентов, переговоры без подготовки. Разобрался во всём, набивая собственные ссадины. Точно знаю, как делать не надо и что нужно учитывать, чтобы «внезапно» не обнаружить себя на дне.</p>
-      <p data-reveal>Сейчас помогаю другим <strong>не повторять моих ошибок</strong> и двигаться быстрее. Не даю советы из учебников — разбираю твою конкретную ситуацию и предлагаю конкретные шаги. У каждого свой уникальный набор качеств и особенностей — поэтому мы и рассматриваем бизнес как уникальную ДНК: с его кейсами, командой, рынком, локацией и другими факторами, влияющими на развитие.</p>
-      <p data-reveal>Отдельное направление — <strong>работа с энергией и состоянием.</strong> Потому что уставший собственник не строит хороший бизнес. Как коуч работаю с тем, что происходит внутри: что забирает силу, что блокирует рост, как выйти на новый уровень без выгорания.</p>
+      <p data-reveal data-i18n="n107" data-i18n-html><strong>Синтез большого опыта работы в найме и предпринимательства.</strong> Строил бизнесы сам — с нуля, на свои, без связей. Прошёл через хаос операционки, команды без регламентов, переговоры без подготовки. Разобрался во всём, набивая собственные ссадины. Точно знаю, как делать не надо и что нужно учитывать, чтобы «внезапно» не обнаружить себя на дне.</p>
+      <p data-reveal data-i18n="n108" data-i18n-html>Сейчас помогаю другим <strong>не повторять моих ошибок</strong> и двигаться быстрее. Не даю советы из учебников — разбираю твою конкретную ситуацию и предлагаю конкретные шаги. У каждого свой уникальный набор качеств и особенностей — поэтому мы и рассматриваем бизнес как уникальную ДНК: с его кейсами, командой, рынком, локацией и другими факторами, влияющими на развитие.</p>
+      <p data-reveal data-i18n="n109" data-i18n-html>Отдельное направление — <strong>работа с энергией и состоянием.</strong> Потому что уставший собственник не строит хороший бизнес. Как коуч работаю с тем, что происходит внутри: что забирает силу, что блокирует рост, как выйти на новый уровень без выгорания.</p>
       <div class="wins">
-        <div class="card win" data-spot data-reveal><div class="num grad-text" data-count="87" data-suffix="%">87%</div><div class="txt"><strong>клиентов выходят из операционки</strong>в течение первых 4–6 месяцев работы</div></div>
-        <div class="card win" data-spot data-reveal><div class="num grad-text" data-count="2.8" data-prefix="×" data-dec="1">×2.8</div><div class="txt"><strong>средний рост выручки</strong>у клиентов после 6 месяцев наставничества</div></div>
-        <div class="card win" data-spot data-reveal><div class="num grad-text" data-count="100" data-suffix="+">100+</div><div class="txt"><strong>предпринимателей прошли через работу</strong>в разных форматах за 5 лет практики</div></div>
+        <div class="card win" data-spot data-reveal><div class="num grad-text" data-count="87" data-suffix="%">87%</div><div class="txt" data-i18n="n110" data-i18n-html><strong>клиентов выходят из операционки</strong>в течение первых 4–6 месяцев работы</div></div>
+        <div class="card win" data-spot data-reveal><div class="num grad-text" data-count="2.8" data-prefix="×" data-dec="1">×2.8</div><div class="txt" data-i18n="n111" data-i18n-html><strong>средний рост выручки</strong>у клиентов после 6 месяцев наставничества</div></div>
+        <div class="card win" data-spot data-reveal><div class="num grad-text" data-count="100" data-suffix="+">100+</div><div class="txt" data-i18n="n112" data-i18n-html><strong>предпринимателей прошли через работу</strong>в разных форматах за 5 лет практики</div></div>
       </div>
     </div>
   </div>
@@ -294,21 +306,21 @@
   <div class="container">
     <div class="sec-head">
       <div data-reveal>
-        <span class="eyebrow">Как работаем</span>
-        <h2 class="h2">От хаоса —<br>к <span class="grad-text">системе</span></h2>
+        <span class="eyebrow" data-i18n="n113">Как работаем</span>
+        <h2 class="h2" data-i18n="n114" data-i18n-html>От хаоса —<br>к <span class="grad-text">системе</span></h2>
       </div>
-      <p class="lead" data-reveal>Каждая сессия — это конкретный результат, а не просто разговор. Работаем системно: диагностика, стратегия, внедрение, рост.</p>
+      <p class="lead" data-reveal data-i18n="n115">Каждая сессия — это конкретный результат, а не просто разговор. Работаем системно: диагностика, стратегия, внедрение, рост.</p>
     </div>
     <div class="timeline" id="timeline">
       <div class="tl-rail"><div class="tl-fill" id="tlFill"></div></div>
       <div class="step" data-reveal><span class="dot">01</span>
-        <div class="card" data-spot style="grid-column:1/-1"><div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap"><h4>Знакомство и диагностика</h4><span class="step-tag">Бесплатно</span></div><p>Бесплатный звонок 30–40 минут. Разбираемся, где ты сейчас, что мешает, чего хочешь достичь. Смотрю на бизнес без прикрас и говорю честно.</p></div></div>
+        <div class="card" data-spot style="grid-column:1/-1"><div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap"><h4 data-i18n="n116">Знакомство и диагностика</h4><span class="step-tag" data-i18n="n117">Бесплатно</span></div><p data-i18n="n118">Бесплатный звонок 30–40 минут. Разбираемся, где ты сейчас, что мешает, чего хочешь достичь. Смотрю на бизнес без прикрас и говорю честно.</p></div></div>
       <div class="step" data-reveal><span class="dot">02</span>
-        <div class="card" data-spot style="grid-column:1/-1"><div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap"><h4>Глубокий аудит бизнеса</h4><span class="step-tag">Сессия 1–2</span></div><p>Изучаю структуру, процессы, цифры. Нахожу узкие горлышки и точки роста. Составляю карту: что именно тормозит бизнес на каждом уровне.</p></div></div>
+        <div class="card" data-spot style="grid-column:1/-1"><div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap"><h4 data-i18n="n119">Глубокий аудит бизнеса</h4><span class="step-tag" data-i18n="n120">Сессия 1–2</span></div><p data-i18n="n121">Изучаю структуру, процессы, цифры. Нахожу узкие горлышки и точки роста. Составляю карту: что именно тормозит бизнес на каждом уровне.</p></div></div>
       <div class="step" data-reveal><span class="dot">03</span>
-        <div class="card" data-spot style="grid-column:1/-1"><div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap"><h4>Стратегия и приоритеты</h4><span class="step-tag">Сессия 2–3</span></div><p>Вместе определяем что делать в первую очередь. Не список из 50 задач — а три ключевых изменения, которые дадут 80% результата.</p></div></div>
+        <div class="card" data-spot style="grid-column:1/-1"><div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap"><h4 data-i18n="n122">Стратегия и приоритеты</h4><span class="step-tag" data-i18n="n123">Сессия 2–3</span></div><p data-i18n="n124">Вместе определяем что делать в первую очередь. Не список из 50 задач — а три ключевых изменения, которые дадут 80% результата.</p></div></div>
       <div class="step" data-reveal><span class="dot">04</span>
-        <div class="card" data-spot style="grid-column:1/-1"><div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap"><h4>Внедрение и поддержка</h4><span class="step-tag">Постоянно</span></div><p>Иду рядом пока ты внедряешь. Отвечаю на вопросы, помогаю не застрять, корректирую по ходу. Не отпускаю до результата.</p></div></div>
+        <div class="card" data-spot style="grid-column:1/-1"><div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap"><h4 data-i18n="n125">Внедрение и поддержка</h4><span class="step-tag" data-i18n="n126">Постоянно</span></div><p data-i18n="n127">Иду рядом пока ты внедряешь. Отвечаю на вопросы, помогаю не застрять, корректирую по ходу. Не отпускаю до результата.</p></div></div>
     </div>
   </div>
 </section>
@@ -318,8 +330,8 @@
   <div class="container">
     <div class="sec-head" style="justify-content:center;text-align:center">
       <div data-reveal>
-        <span class="eyebrow">Экспресс-диагностика</span>
-        <h2 class="h2">Где твой бизнес<br><span class="grad-text">теряет энергию?</span></h2>
+        <span class="eyebrow" data-i18n="n128">Экспресс-диагностика</span>
+        <h2 class="h2" data-i18n="n129" data-i18n-html>Где твой бизнес<br><span class="grad-text">теряет энергию?</span></h2>
       </div>
     </div>
     <div class="card diag-box" data-reveal id="diag">
@@ -335,38 +347,38 @@
   <div class="container">
     <div class="sec-head">
       <div data-reveal>
-        <span class="eyebrow">Форматы работы</span>
-        <h2 class="h2">Выбери свой <span class="grad-text">формат</span></h2>
+        <span class="eyebrow" data-i18n="n131">Форматы работы</span>
+        <h2 class="h2" data-i18n="n132" data-i18n-html>Выбери свой <span class="grad-text">формат</span></h2>
       </div>
     </div>
     <div class="programs-grid">
       <article class="card prog tilt" data-spot data-tilt data-reveal data-prog="Разбор бизнеса — разовая сессия">
         <div class="pn">01</div>
-        <h3>Разбор бизнеса</h3>
-        <div class="fmt">Разовая сессия · 2 часа</div>
-        <p class="desc">Глубокий разбор конкретной ситуации. Уходишь с ясностью и планом действий. Подходит для тех, кто застрял в конкретном вопросе.</p>
-        <ul><li>2 часа интенсивной работы</li><li>Диагностика узкого горлышка</li><li>Конкретный план действий письменно</li><li>Ответы на вопросы 7 дней после</li></ul>
+        <h3 data-i18n="n133">Разбор бизнеса</h3>
+        <div class="fmt" data-i18n="n134">Разовая сессия · 2 часа</div>
+        <p class="desc" data-i18n="n135">Глубокий разбор конкретной ситуации. Уходишь с ясностью и планом действий. Подходит для тех, кто застрял в конкретном вопросе.</p>
+        <ul><li data-i18n="n136">2 часа интенсивной работы</li><li data-i18n="n137">Диагностика узкого горлышка</li><li data-i18n="n138">Конкретный план действий письменно</li><li data-i18n="n139">Ответы на вопросы 7 дней после</li></ul>
         <div class="price">120 EUR</div>
-        <a href="#contact" class="btn btn-ghost" data-pick="Разбор бизнеса — разовая сессия">Записаться</a>
+        <a href="#contact" class="btn btn-ghost" data-pick="Разбор бизнеса — разовая сессия" data-i18n="n140">Записаться</a>
       </article>
       <article class="card prog featured tilt" data-spot data-tilt data-reveal style="--d:.08s">
-        <span class="badge-pop">Популярное</span>
+        <span class="badge-pop" data-i18n="n141">Популярное</span>
         <div class="pn">02</div>
-        <h3>Наставничество 3 месяца</h3>
-        <div class="fmt">Системная работа · 3 мес</div>
-        <p class="desc">Полное сопровождение: строим систему, выходим из операционки, работаем над состоянием. Двигаемся от точки А к точке Б вместе.</p>
-        <ul><li>2 сессии в месяц по 1.5 часа</li><li>Поддержка в мессенджере</li><li>Ревью решений и материалов</li><li>Работа над состоянием и энергией</li><li>Аудит процессов и регламентов</li></ul>
-        <div class="price">800 EUR <small>/ мес</small></div>
-        <a href="#contact" class="btn btn-primary" data-pick="Наставничество 3 месяца">Записаться</a>
+        <h3 data-i18n="n142">Наставничество 3 месяца</h3>
+        <div class="fmt" data-i18n="n143">Системная работа · 3 мес</div>
+        <p class="desc" data-i18n="n144">Полное сопровождение: строим систему, выходим из операционки, работаем над состоянием. Двигаемся от точки А к точке Б вместе.</p>
+        <ul><li data-i18n="n145">2 сессии в месяц по 1.5 часа</li><li data-i18n="n146">Поддержка в мессенджере</li><li data-i18n="n147">Ревью решений и материалов</li><li data-i18n="n148">Работа над состоянием и энергией</li><li data-i18n="n149">Аудит процессов и регламентов</li></ul>
+        <div class="price" data-i18n="n150" data-i18n-html>800 EUR <small>/ мес</small></div>
+        <a href="#contact" class="btn btn-primary" data-pick="Наставничество 3 месяца" data-i18n="n151">Записаться</a>
       </article>
       <article class="card prog tilt" data-spot data-tilt data-reveal style="--d:.16s">
         <div class="pn">03</div>
-        <h3>VIP-день</h3>
-        <div class="fmt">Интенсив · Полный день</div>
-        <p class="desc">Погружаемся в бизнес на целый день. Создаём стратегическую карту на год: что строить, как расти, где точки прорыва.</p>
-        <ul><li>6 часов плотной работы</li><li>Полная диагностика бизнеса</li><li>Стратегия и дорожная карта на год</li><li>Работа с состоянием собственника</li><li>Месяц поддержки после дня</li></ul>
+        <h3 data-i18n="n152">VIP-день</h3>
+        <div class="fmt" data-i18n="n153">Интенсив · Полный день</div>
+        <p class="desc" data-i18n="n154">Погружаемся в бизнес на целый день. Создаём стратегическую карту на год: что строить, как расти, где точки прорыва.</p>
+        <ul><li data-i18n="n155">6 часов плотной работы</li><li data-i18n="n156">Полная диагностика бизнеса</li><li data-i18n="n157">Стратегия и дорожная карта на год</li><li data-i18n="n158">Работа с состоянием собственника</li><li data-i18n="n159">Месяц поддержки после дня</li></ul>
         <div class="price">2 000 EUR</div>
-        <a href="#contact" class="btn btn-ghost" data-pick="VIP-день">Записаться</a>
+        <a href="#contact" class="btn btn-ghost" data-pick="VIP-день" data-i18n="n160">Записаться</a>
       </article>
     </div>
   </div>
@@ -377,8 +389,8 @@
   <div class="container">
     <div class="sec-head">
       <div data-reveal>
-        <span class="eyebrow">Результаты клиентов</span>
-        <h2 class="h2">Бизнес, который<br><span class="grad-text">работает иначе</span></h2>
+        <span class="eyebrow" data-i18n="n161">Результаты клиентов</span>
+        <h2 class="h2" data-i18n="n162" data-i18n-html>Бизнес, который<br><span class="grad-text">работает иначе</span></h2>
       </div>
       <div class="carousel-ctl" data-reveal>
         <button class="icon-btn" id="prev" aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
@@ -386,11 +398,11 @@
       </div>
     </div>
     <div class="slides" id="slides" data-reveal tabindex="0" aria-label="Отзывы клиентов">
-      <article class="card t-card dark" data-spot><span class="t-mark">“</span><p class="t-text">Три года строил IT-продукт и параллельно тушил пожары в операционке. Каждый день — в задачах, но бизнес не рос. После наставничества выстроили структуру команды, прописали зоны ответственности, внедрили еженедельные спринты. Через четыре месяца я впервые работал над стратегией, а не над тем, кто заболел и кто не сдал задачу.</p><div class="t-result">Команда выросла с 4 до 11 человек без хаоса</div><div class="t-author"><div class="t-av">ДК</div><div><div class="t-name">Дмитрий</div><div class="t-role">CEO, SaaS-стартап</div></div></div></article>
-      <article class="card t-card" data-spot><span class="t-mark">“</span><p class="t-text">У меня была сеть из трёх салонов красоты и полное ощущение, что я работаю на бизнес, а не он на меня. Андрей помог найти узкое место — проблема оказалась не в администраторах, а в том, как выстроена запись и повторные визиты. Переделали процесс — возврат клиентов вырос на 35%.</p><div class="t-result">Возврат клиентов +35% за 2 месяца</div><div class="t-author"><div class="t-av">МВ</div><div><div class="t-name">Мария</div><div class="t-role">Владелец сети салонов красоты</div></div></div></article>
-      <article class="card t-card" data-spot><span class="t-mark">“</span><p class="t-text">Открыл кафе два года назад — всё держалось на мне лично. Любая смена без меня — стресс. После работы с Андреем прописали стандарты, обучили двух управляющих, сделали чек-листы на каждую смену. Сейчас уезжаю на две недели — и всё работает.</p><div class="t-result">Первый отпуск за 2 года без звонков</div><div class="t-author"><div class="t-av">ТМ</div><div><div class="t-name">Тимур</div><div class="t-role">Владелец кафе</div></div></div></article>
-      <article class="card t-card" data-spot><span class="t-mark">“</span><p class="t-text">Пришла на разбор бизнеса с одним вопросом — почему при хорошей выручке всегда не хватает денег. За два часа разобрались с unit-экономикой, нашли три позиции в меню, которые работали в минус, и поняли, где реально маржа. Окупила сессию в первый же месяц.</p><div class="t-result">Нашла убыточные позиции, маржа +18%</div><div class="t-author"><div class="t-av">СЛ</div><div><div class="t-name">София</div><div class="t-role">Владелец ресторана</div></div></div></article>
-      <article class="card t-card dark" data-spot><span class="t-mark">“</span><p class="t-text">Работал с Андреем над состоянием и переговорами. Звучит абстрактно — но результат конкретный. Закрыл партнёрство, которое тянул два года и боялся разорвать. Подписал контракт с клиентом вдвое крупнее тех, с кем работал раньше. Оказалось, дело было не в навыках — а в том, как я себя подаю.</p><div class="t-result">Закрыл контракт в 2× больше предыдущего максимума</div><div class="t-author"><div class="t-av">АВ</div><div><div class="t-name">Алексей</div><div class="t-role">Основатель digital-агентства</div></div></div></article>
+      <article class="card t-card dark" data-spot><span class="t-mark">“</span><p class="t-text" data-i18n="n163">Три года строил IT-продукт и параллельно тушил пожары в операционке. Каждый день — в задачах, но бизнес не рос. После наставничества выстроили структуру команды, прописали зоны ответственности, внедрили еженедельные спринты. Через четыре месяца я впервые работал над стратегией, а не над тем, кто заболел и кто не сдал задачу.</p><div class="t-result" data-i18n="n164">Команда выросла с 4 до 11 человек без хаоса</div><div class="t-author"><div class="t-av" data-i18n="n165">ДК</div><div><div class="t-name" data-i18n="n166">Дмитрий</div><div class="t-role" data-i18n="n167">CEO, SaaS-стартап</div></div></div></article>
+      <article class="card t-card" data-spot><span class="t-mark">“</span><p class="t-text" data-i18n="n168">У меня была сеть из трёх салонов красоты и полное ощущение, что я работаю на бизнес, а не он на меня. Андрей помог найти узкое место — проблема оказалась не в администраторах, а в том, как выстроена запись и повторные визиты. Переделали процесс — возврат клиентов вырос на 35%.</p><div class="t-result" data-i18n="n169">Возврат клиентов +35% за 2 месяца</div><div class="t-author"><div class="t-av" data-i18n="n170">МВ</div><div><div class="t-name" data-i18n="n171">Мария</div><div class="t-role" data-i18n="n172">Владелец сети салонов красоты</div></div></div></article>
+      <article class="card t-card" data-spot><span class="t-mark">“</span><p class="t-text" data-i18n="n173">Открыл кафе два года назад — всё держалось на мне лично. Любая смена без меня — стресс. После работы с Андреем прописали стандарты, обучили двух управляющих, сделали чек-листы на каждую смену. Сейчас уезжаю на две недели — и всё работает.</p><div class="t-result" data-i18n="n174">Первый отпуск за 2 года без звонков</div><div class="t-author"><div class="t-av" data-i18n="n175">ТМ</div><div><div class="t-name" data-i18n="n176">Тимур</div><div class="t-role" data-i18n="n177">Владелец кафе</div></div></div></article>
+      <article class="card t-card" data-spot><span class="t-mark">“</span><p class="t-text" data-i18n="n178">Пришла на разбор бизнеса с одним вопросом — почему при хорошей выручке всегда не хватает денег. За два часа разобрались с unit-экономикой, нашли три позиции в меню, которые работали в минус, и поняли, где реально маржа. Окупила сессию в первый же месяц.</p><div class="t-result" data-i18n="n179">Нашла убыточные позиции, маржа +18%</div><div class="t-author"><div class="t-av" data-i18n="n180">СЛ</div><div><div class="t-name" data-i18n="n181">София</div><div class="t-role" data-i18n="n182">Владелец ресторана</div></div></div></article>
+      <article class="card t-card dark" data-spot><span class="t-mark">“</span><p class="t-text" data-i18n="n183">Работал с Андреем над состоянием и переговорами. Звучит абстрактно — но результат конкретный. Закрыл партнёрство, которое тянул два года и боялся разорвать. Подписал контракт с клиентом вдвое крупнее тех, с кем работал раньше. Оказалось, дело было не в навыках — а в том, как я себя подаю.</p><div class="t-result" data-i18n="n184">Закрыл контракт в 2× больше предыдущего максимума</div><div class="t-author"><div class="t-av" data-i18n="n185">АВ</div><div><div class="t-name" data-i18n="n186">Алексей</div><div class="t-role" data-i18n="n187">Основатель digital-агентства</div></div></div></article>
     </div>
     <div class="dots" id="dots"></div>
   </div>
@@ -400,16 +412,16 @@
 <section id="faq">
   <div class="container faq-grid">
     <div data-reveal>
-      <span class="eyebrow">Вопросы</span>
-      <h2 class="h2">Что обычно <span class="grad-text">спрашивают</span></h2>
-      <p class="lead" style="margin-top:20px">Не нашёл ответ — напиши в Telegram, отвечу лично.</p>
+      <span class="eyebrow" data-i18n="n188">Вопросы</span>
+      <h2 class="h2" data-i18n="n189" data-i18n-html>Что обычно <span class="grad-text">спрашивают</span></h2>
+      <p class="lead" style="margin-top:20px" data-i18n="n190">Не нашёл ответ — напиши в Telegram, отвечу лично.</p>
     </div>
     <div class="faq-list" data-reveal>
-      <div class="faq-item open"><button class="faq-q" aria-expanded="true">Как проходит первый звонок?<span class="pm"></span></button><div class="faq-a"><div><p>Бесплатный созвон на 30–40 минут. Разбираемся, где ты сейчас, что мешает и чего хочешь достичь. Без обязательств — в конце станет понятно, есть ли смысл работать дальше вместе.</p></div></div></div>
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">Чем наставничество отличается от курса или консультации?<span class="pm"></span></button><div class="faq-a"><div><p>Здесь нет учебников и шаблонных советов. Мы разбираем именно твой бизнес — его ДНК, команду, рынок — и вместе внедряем конкретные изменения. Я иду рядом, пока ты внедряешь, и корректирую по ходу.</p></div></div></div>
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">Какой формат мне выбрать?<span class="pm"></span></button><div class="faq-a"><div><p>Если застрял в одном конкретном вопросе — разбор бизнеса. Если нужна система и выход из операционки — наставничество на 3 месяца. Если нужна стратегия на год — VIP-день. Не уверен — пройди экспресс-диагностику выше или выбери «Пока не знаю» в заявке.</p></div></div></div>
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">Что я получу по итогу?<span class="pm"></span></button><div class="faq-a"><div><p>Не советы, а готовые системы: карту потерь и точек роста, регламенты, чек-листы, скрипты, дашборд метрик — то, что остаётся в бизнесе и продолжает работать после наших сессий.</p></div></div></div>
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">Как быстро вы ответите на заявку?<span class="pm"></span></button><div class="faq-a"><div><p>В течение 24 часов — напишу и договоримся о времени звонка.</p></div></div></div>
+      <div class="faq-item open"><button class="faq-q" aria-expanded="true" data-i18n="n191" data-i18n-html>Как проходит первый звонок?<span class="pm"></span></button><div class="faq-a"><div><p data-i18n="n192">Бесплатный созвон на 30–40 минут. Разбираемся, где ты сейчас, что мешает и чего хочешь достичь. Без обязательств — в конце станет понятно, есть ли смысл работать дальше вместе.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false" data-i18n="n193" data-i18n-html>Чем наставничество отличается от курса или консультации?<span class="pm"></span></button><div class="faq-a"><div><p data-i18n="n194">Здесь нет учебников и шаблонных советов. Мы разбираем именно твой бизнес — его ДНК, команду, рынок — и вместе внедряем конкретные изменения. Я иду рядом, пока ты внедряешь, и корректирую по ходу.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false" data-i18n="n195" data-i18n-html>Какой формат мне выбрать?<span class="pm"></span></button><div class="faq-a"><div><p data-i18n="n196">Если застрял в одном конкретном вопросе — разбор бизнеса. Если нужна система и выход из операционки — наставничество на 3 месяца. Если нужна стратегия на год — VIP-день. Не уверен — пройди экспресс-диагностику выше или выбери «Пока не знаю» в заявке.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false" data-i18n="n197" data-i18n-html>Что я получу по итогу?<span class="pm"></span></button><div class="faq-a"><div><p data-i18n="n198">Не советы, а готовые системы: карту потерь и точек роста, регламенты, чек-листы, скрипты, дашборд метрик — то, что остаётся в бизнесе и продолжает работать после наших сессий.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false" data-i18n="n199" data-i18n-html>Как быстро вы ответите на заявку?<span class="pm"></span></button><div class="faq-a"><div><p data-i18n="n200">В течение 24 часов — напишу и договоримся о времени звонка.</p></div></div></div>
     </div>
   </div>
 </section>
@@ -418,43 +430,44 @@
 <section class="cta" id="contact">
   <div class="container cta-grid">
     <div data-reveal>
-      <span class="eyebrow">Начать</span>
-      <h2 class="h2 cta-title">Разберём<br>твой бизнес<br><span class="grad-text">бесплатно</span></h2>
-      <p class="cta-sub">Первый звонок — 30 минут, бесплатно и без обязательств. Смотрим на твою ситуацию честно: где застряло, что мешает, есть ли смысл работать дальше вместе.</p>
+      <span class="eyebrow" data-i18n="n201">Начать</span>
+      <h2 class="h2 cta-title" data-i18n="n202" data-i18n-html>Разберём<br>твой бизнес<br><span class="grad-text">бесплатно</span></h2>
+      <p class="cta-sub" data-i18n="n203">Первый звонок — 30 минут, бесплатно и без обязательств. Смотрим на твою ситуацию честно: где застряло, что мешает, есть ли смысл работать дальше вместе.</p>
       <div class="contacts">
-        <a class="btn btn-ghost magnetic" href="https://t.me/mentor_helpstogrow" target="_blank" rel="noopener">Написать в Telegram</a>
+        <a class="btn btn-ghost magnetic" href="https://t.me/mentor_helpstogrow" target="_blank" rel="noopener" data-i18n="n204">Написать в Telegram</a>
         <a class="btn btn-ghost magnetic" href="https://www.instagram.com/andrei.yasinski?igsh=MTJjc2x3cjRybmEzdA==" target="_blank" rel="noopener">Instagram</a>
       </div>
     </div>
     <div class="form-card" data-reveal>
       <div id="formWrap">
-        <h3>Оставь заявку</h3>
-        <p>Напишу в течение 24 часов и договоримся о времени звонка</p>
+        <h3 data-i18n="n205">Оставь заявку</h3>
+        <p data-i18n="n206">Напишу в течение 24 часов и договоримся о времени звонка</p>
         <form action="https://formspree.io/f/mqejglqw" method="POST" id="contactForm" novalidate>
-          <div class="field"><input type="text" name="name" id="f-name" placeholder=" " required autocomplete="name"><label for="f-name">Имя</label></div>
-          <div class="field"><input type="text" name="contact" id="f-contact" placeholder=" " required autocomplete="off"><label for="f-contact">Telegram / WhatsApp / телефон</label></div>
+          <div class="field"><input type="text" name="name" id="f-name" placeholder=" " required autocomplete="name"><label for="f-name" data-i18n="n207">Имя</label></div>
+          <div class="field"><input type="text" name="contact" id="f-contact" placeholder=" " required autocomplete="off"><label for="f-contact" data-i18n="n208">Telegram / WhatsApp / телефон</label></div>
           <div class="field sel">
             <select name="format" id="f-format" required>
               <option value="" disabled selected></option>
-              <option>Бесплатный разбор (знакомство)</option>
-              <option>Разбор бизнеса — разовая сессия</option>
-              <option>Наставничество 3 месяца</option>
-              <option>VIP-день</option>
-              <option>Пока не знаю, хочу разобраться</option>
+              <option data-i18n="n209" value="Бесплатный разбор (знакомство)">Бесплатный разбор (знакомство)</option>
+              <option data-i18n="n210" value="Разбор бизнеса — разовая сессия">Разбор бизнеса — разовая сессия</option>
+              <option data-i18n="n211" value="Наставничество 3 месяца">Наставничество 3 месяца</option>
+              <option data-i18n="n212" value="VIP-день">VIP-день</option>
+              <option data-i18n="n213" value="Пока не знаю, хочу разобраться">Пока не знаю, хочу разобраться</option>
             </select>
-            <label for="f-format">Какой формат интересует?</label>
+            <label for="f-format" data-i18n="n214">Какой формат интересует?</label>
           </div>
-          <div class="field"><textarea name="message" id="f-message" placeholder=" "></textarea><label for="f-message">Коротко: чем занимаешься и что хочешь изменить?</label></div>
+          <div class="field"><textarea name="message" id="f-message" placeholder=" "></textarea><label for="f-message" data-i18n="n215">Коротко: чем занимаешься и что хочешь изменить?</label></div>
           <input type="hidden" name="diagnostic" id="f-diag">
+          <input type="hidden" name="lang" id="f-lang" value="ru">
           <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <button type="submit" class="btn btn-primary magnetic" id="submitBtn" style="width:100%">Отправить заявку <span class="arr">→</span></button>
-          <p class="consent">Отправляя форму, ты соглашаешься с <a href="privacy.html">политикой конфиденциальности</a></p>
+          <button type="submit" class="btn btn-primary magnetic" id="submitBtn" style="width:100%" data-i18n="n216" data-i18n-html>Отправить заявку <span class="arr">→</span></button>
+          <p class="consent" data-i18n="n217" data-i18n-html>Отправляя форму, ты соглашаешься с <a href="privacy.html">политикой конфиденциальности</a></p>
         </form>
       </div>
       <div class="form-ok" id="formOk">
         <svg class="check" viewBox="0 0 76 76"><circle cx="38" cy="38" r="33"/><path d="M24 39l10 10 19-21"/></svg>
-        <h3>Заявка отправлена</h3>
-        <p>Спасибо! Напишу в течение 24 часов.</p>
+        <h3 data-i18n="n218">Заявка отправлена</h3>
+        <p data-i18n="n219">Спасибо! Напишу в течение 24 часов.</p>
       </div>
     </div>
   </div>
@@ -464,13 +477,13 @@
 
 <footer>
   <div class="container foot">
-    <a href="#top" class="logo"><svg aria-hidden="true"><use href="#mark"/></svg><span class="logo-text"><span class="logo-name">Helpstogrow</span><span class="logo-sub">Андрей Ясинский</span></span></a>
+    <a href="#top" class="logo"><svg aria-hidden="true"><use href="#mark"/></svg><span class="logo-text"><span class="logo-name">Helpstogrow</span><span class="logo-sub" data-i18n="n220">Андрей Ясинский</span></span></a>
     <div class="foot-links">
       <a href="https://t.me/mentor_helpstogrow" target="_blank" rel="noopener">Telegram</a>
       <a href="https://www.instagram.com/andrei.yasinski?igsh=MTJjc2x3cjRybmEzdA==" target="_blank" rel="noopener">Instagram</a>
-      <a href="privacy.html">Политика конфиденциальности</a>
+      <a href="privacy.html" data-i18n="n221">Политика конфиденциальности</a>
     </div>
-    <div class="copy">© <span id="year">2025</span> Helpstogrow. Все права защищены.</div>
+    <div class="copy" data-i18n="n222" data-i18n-html>© <span id="year">2025</span> Helpstogrow. Все права защищены.</div>
   </div>
 </footer>
 
@@ -487,6 +500,7 @@
 </div>
 <div class="toast" id="toast" role="status"></div>
 
+<script src="assets/i18n.js"></script>
 <script src="assets/main.js"></script>
 </body>
 </html>

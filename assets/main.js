@@ -7,6 +7,8 @@
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
   var root = document.documentElement;
+  var I = window.HTG_I18N;
+  var T = I.t, TL = I.tl;
 
   function store(k, v) {
     try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) {}
@@ -81,12 +83,13 @@
   /* ── Reveal + counters ── */
   function countUp(el) {
     var end = parseFloat(el.dataset.count), dec = +el.dataset.dec || 0;
-    var pre = el.dataset.prefix || '', suf = el.dataset.suffix || '';
-    if (reduce) { el.textContent = pre + end.toFixed(dec) + suf; return; }
+    var pre = el.dataset.prefix || '';
+    // the suffix is read on every frame: the language may be switched while the counter is running
+    if (reduce) { el.textContent = pre + end.toFixed(dec) + (el.dataset.suffix || ''); return; }
     var t0 = performance.now(), dur = 1800;
     (function tick(t) {
       var p = Math.min((t - t0) / dur, 1), e = 1 - Math.pow(1 - p, 4);
-      el.textContent = pre + (end * e).toFixed(dec) + suf;
+      el.textContent = pre + (end * e).toFixed(dec) + (el.dataset.suffix || '');
       if (p < 1) requestAnimationFrame(tick);
     })(t0);
   }
@@ -106,23 +109,29 @@
   /* ── Hero rotating word ── */
   var rot = $('#rotator');
   if (rot && !reduce) {
-    var words = rot.dataset.words.split('|'), wi = 0;
-    function typeTo(word, done) {
+    var gen = 0, wi = 0;
+    var typeTo = function (word, g, done) {
       var cur = rot.textContent;
       (function del() {
+        if (g !== gen) return;
         if (cur.length) { cur = cur.slice(0, -1); rot.textContent = cur; setTimeout(del, 38); }
         else (function add(i) {
+          if (g !== gen) return;
           if (i <= word.length) { rot.textContent = word.slice(0, i); setTimeout(function () { add(i + 1); }, 70); }
           else done();
         })(1);
       })();
-    }
-    (function loop() {
+    };
+    var rotLoop = function (g) {
       setTimeout(function () {
+        if (g !== gen) return;
+        var words = rot.dataset.words.split('|');
         wi = (wi + 1) % words.length;
-        typeTo(words[wi], loop);
+        typeTo(words[wi], g, function () { rotLoop(g); });
       }, 2600);
-    })();
+    };
+    rotLoop(0);
+    document.addEventListener('htg:lang', function () { gen++; wi = 0; rotLoop(gen); });
   }
 
   /* ── Network canvas ── */
@@ -239,11 +248,12 @@
 
   /* ── Marquee ── */
   var mq = $('#marquee');
-  if (mq) {
-    var items = ['ДНК бизнеса', 'Процессы', 'Узкие горлышки', 'Отдел продаж', 'Дашборды', 'Делегирование', 'Энергия собственника', 'Регламенты', 'Переговоры', 'Масштабирование'];
-    var html = items.map(function (t) { return '<span>' + t + '</span>'; }).join('');
+  function renderMarquee() {
+    if (!mq) return;
+    var html = TL('marquee').map(function (t) { return '<span>' + t + '</span>'; }).join('');
     mq.innerHTML = html + html;
   }
+  renderMarquee();
 
   /* ── Service tabs ── */
   var tabs = $$('.tab'), panels = $$('.panel');
@@ -280,64 +290,54 @@
   updateTimeline();
 
   /* ── Diagnostic quiz ── */
-  var pillars = ['ДНК', 'Процессы', 'Горлышки', 'Собственник'];
-  var pillarNames = ['ДНК бизнеса', 'Процессы и скелет', 'Узкие горлышки', 'Состояние собственника'];
-  var pillarTips = [
-    'Стоит заново сформулировать цели, бизнес-модель и ценности — чтобы бизнес рос осознанно, а не по инерции.',
-    'Бизнес слишком завязан на вас. Нужны регламенты, правильное делегирование и ответственность по зонам.',
-    'Деньги и время утекают в одном-двух местах. Точечная диагностика обычно даёт самый быстрый рост.',
-    'Ресурс собственника — главное ограничение роста. Нужны работа с энергией, фокусом и переговорами.'
-  ];
-  var Q = [
-    { p: 0, q: 'Насколько чётко сформулированы цели и модель вашего бизнеса на ближайший год?', o: ['Всё прописано и понятно команде', 'Есть общее понимание, но без деталей', 'Цели есть только у меня в голове', 'Живём по ситуации'] },
-    { p: 1, q: 'Что произойдёт с бизнесом, если вы уедете на две недели без связи?', o: ['Всё продолжит работать', 'Будут небольшие сбои', 'Многое остановится', 'Начнётся хаос'] },
-    { p: 1, q: 'Насколько описаны регламенты, чек-листы и зоны ответственности?', o: ['Описано всё ключевое', 'Описано частично', 'Что-то есть, но не работает', 'Всё держится на памяти людей'] },
-    { p: 2, q: 'Знаете ли вы, где бизнес теряет больше всего денег и времени?', o: ['Да, есть карта потерь с цифрами', 'Догадываюсь, но без цифр', 'Чувствую, что теряем, но не вижу где', 'Нет, не анализировал(а)'] },
-    { p: 2, q: 'Как вы принимаете решения: на основе данных или ощущений?', o: ['Дашборд с метриками в реальном времени', 'Иногда смотрю отчёты', 'В основном интуиция', 'Узнаю цифры, когда уже поздно'] },
-    { p: 3, q: 'Сколько времени вы тратите на операционку, а не на стратегию?', o: ['Меньше 20%', 'Около половины', 'Большую часть времени', 'Почти всё время тушу пожары'] },
-    { p: 3, q: 'Как вы себя чувствуете: энергия, фокус, уверенность в переговорах?', o: ['Полон(а) сил и фокуса', 'Бывают просадки', 'Часто чувствую усталость', 'Близок(а) к выгоранию'] }
-  ];
+  var QP = [0, 1, 1, 2, 2, 3, 3];                 // pillar of each question
+  var PICKS = ['Разбор бизнеса — разовая сессия', 'Наставничество 3 месяца']; // canonical form values (Russian)
   var view = $('#qView'), qBar = $('#qBar'), qStep = $('#qStep'), qPct = $('#qPct');
-  var ans = [], cur = -1, lastResult = '';
+  var ans = [], cur = -1, phase = 'intro', lastResult = '';
 
   function intro() {
-    cur = -1; ans = [];
-    qBar.style.width = '0%'; qStep.textContent = 'Диагностика'; qPct.textContent = '7 вопросов · 1 минута';
-    view.innerHTML = '<div class="q-intro"><p>Ответь на 7 коротких вопросов — получишь карту по четырём направлениям, слабую зону роста и рекомендацию по формату работы.</p><button class="btn btn-primary" id="qStart">Начать <span class="arr">→</span></button></div>';
+    phase = 'intro'; cur = -1; ans = [];
+    qBar.style.width = '0%'; qStep.textContent = T('quiz.label'); qPct.textContent = T('quiz.meta');
+    view.innerHTML = '<div class="q-intro"><p>' + T('quiz.intro') + '</p><button class="btn btn-primary" id="qStart">' + T('quiz.start') + ' <span class="arr">→</span></button></div>';
     $('#qStart').addEventListener('click', function () { ask(0); });
   }
   function ask(i) {
-    cur = i;
-    qBar.style.width = (i / Q.length * 100) + '%';
-    qStep.textContent = 'Вопрос ' + (i + 1) + ' из ' + Q.length;
-    qPct.textContent = pillarNames[Q[i].p];
+    phase = 'ask'; cur = i;
+    var q = TL('quiz.q'), o = TL('quiz.o')[i], names = TL('quiz.names');
+    qBar.style.width = (i / QP.length * 100) + '%';
+    qStep.textContent = T('quiz.step', { n: i + 1, m: QP.length });
+    qPct.textContent = names[QP[i]];
     var h = '<h3 class="q-title"></h3><div class="opts">';
-    Q[i].o.forEach(function (t, k) { h += '<button class="opt" data-k="' + k + '"><span class="k">' + 'ABCD'[k] + '</span><span></span></button>'; });
-    h += '</div><div class="q-nav">' + (i > 0 ? '<button class="link-btn" id="qBack">← Назад</button>' : '<span></span>') + '<span></span></div>';
+    o.forEach(function (t, k) { h += '<button class="opt" data-k="' + k + '"><span class="k">' + 'ABCD'[k] + '</span><span></span></button>'; });
+    h += '</div><div class="q-nav">' + (i > 0 ? '<button class="link-btn" id="qBack">' + T('quiz.back') + '</button>' : '<span></span>') + '<span></span></div>';
     view.innerHTML = h;
-    $('.q-title', view).textContent = Q[i].q;
+    $('.q-title', view).textContent = q[i];
     $$('.opt', view).forEach(function (b, k) {
-      b.lastChild.textContent = Q[i].o[k];
+      b.lastChild.textContent = o[k];
       b.addEventListener('click', function () {
         ans[i] = k;
-        if (i + 1 < Q.length) ask(i + 1); else finish();
+        if (i + 1 < QP.length) ask(i + 1); else finish();
       });
     });
     var back = $('#qBack'); if (back) back.addEventListener('click', function () { ask(i - 1); });
   }
   function finish() {
-    qBar.style.width = '100%'; qStep.textContent = 'Результат'; qPct.textContent = '';
+    phase = 'result';
+    qBar.style.width = '100%'; qStep.textContent = T('quiz.result'); qPct.textContent = '';
+    var names = TL('quiz.names'), short = TL('quiz.short');
     var sum = [0, 0, 0, 0], cnt = [0, 0, 0, 0];
-    Q.forEach(function (q, i) { sum[q.p] += ans[i]; cnt[q.p]++; });
+    QP.forEach(function (p, i) { sum[p] += ans[i]; cnt[p]++; });
     var pain = sum.map(function (s, i) { return s / (cnt[i] * 3); }); // 0 = всё хорошо, 1 = болит
     var total = pain.reduce(function (a, b) { return a + b; }, 0) / 4;
     var health = Math.round((1 - total) * 100);
     var weak = pain.indexOf(Math.max.apply(null, pain));
-    var rec, pick;
-    if (total < .35) { rec = 'Разбор бизнеса'; pick = 'Разбор бизнеса — разовая сессия'; }
-    else { rec = 'Наставничество 3 месяца'; pick = 'Наставничество 3 месяца'; }
-    var headline = health >= 70 ? 'Фундамент крепкий — есть что отшлифовать' : health >= 45 ? 'Есть явные точки роста' : 'Бизнес тянет из вас слишком много энергии';
-    lastResult = 'Индекс «здоровья»: ' + health + '%. Слабая зона: ' + pillarNames[weak] + '. Рекомендация: ' + rec + '.';
+    var recI = total < .35 ? 0 : 1, pick = PICKS[recI];
+    var heads = TL('quiz.heads');
+    var headline = health >= 70 ? heads[0] : health >= 45 ? heads[1] : heads[2];
+    var rec = TL('quiz.recs')[recI];
+    // the summary sent to the owner is always Russian; the visitor sees their own language
+    lastResult = I.tr('quiz.summary', 'ru', { h: health, w: I.tr('quiz.names', 'ru')[weak], r: I.tr('quiz.recs', 'ru')[recI] });
+    var localSummary = T('quiz.summary', { h: health, w: names[weak], r: rec });
 
     // radar
     var cx = 140, cy = 140, R = 96, ang = [-90, 0, 90, 180].map(function (a) { return a * Math.PI / 180; });
@@ -345,22 +345,23 @@
     var rings = [.33, .66, 1].map(function (r) { return '<polygon class="ring" points="' + ang.map(function (a) { return pt(a, r); }).join(' ') + '"/>'; }).join('');
     var axes = ang.map(function (a) { return '<line class="axis" x1="140" y1="140" x2="' + pt(a, 1).split(',')[0] + '" y2="' + pt(a, 1).split(',')[1] + '"/>'; }).join('');
     var shape = '<polygon class="shape" points="' + ang.map(function (a, i) { return pt(a, Math.max(.08, 1 - pain[i])); }).join(' ') + '"/>';
-    var labels = '<text x="140" y="22" text-anchor="middle">' + pillars[0] + '</text><text x="262" y="144" text-anchor="start" dx="-6">' + pillars[1] + '</text><text x="140" y="268" text-anchor="middle">' + pillars[2] + '</text><text x="18" y="144" text-anchor="end" dx="14">' + pillars[3] + '</text>';
-    var radar = '<svg class="radar" viewBox="0 0 280 280" role="img" aria-label="Радар по четырём направлениям">' + rings + axes + shape + labels + '</svg>';
+    var labels = '<text x="140" y="22" text-anchor="middle">' + short[0] + '</text><text x="262" y="144" text-anchor="start" dx="-6">' + short[1] + '</text><text x="140" y="268" text-anchor="middle">' + short[2] + '</text><text x="18" y="144" text-anchor="end" dx="14">' + short[3] + '</text>';
+    var radar = '<svg class="radar" viewBox="0 0 280 280" role="img" aria-label="' + T('quiz.radar') + '">' + rings + axes + shape + labels + '</svg>';
 
-    view.innerHTML = '<div class="result"><div>' + radar + '</div><div><div class="score grad-text">' + health + '%</div><h3></h3><p class="tip"></p><div class="rec">Слабая зона: <b></b><br>Рекомендуем: <b class="r"></b></div><div class="actions"><a href="#contact" class="btn btn-primary" id="qGo">Обсудить результат <span class="arr">→</span></a><button class="link-btn" id="qAgain">Пройти заново</button></div></div></div>';
+    view.innerHTML = '<div class="result"><div>' + radar + '</div><div><div class="score grad-text">' + health + '%</div><h3></h3><p class="tip"></p><div class="rec">' + T('quiz.weak') + ' <b></b><br>' + T('quiz.rec') + ' <b class="r"></b></div><div class="actions"><a href="#contact" class="btn btn-primary" id="qGo">' + T('quiz.go') + ' <span class="arr">→</span></a><button class="link-btn" id="qAgain">' + T('quiz.again') + '</button></div></div></div>';
     $('h3', view).textContent = headline;
-    $('.tip', view).textContent = pillarTips[weak];
-    $('.rec b', view).textContent = pillarNames[weak];
+    $('.tip', view).textContent = TL('quiz.tips')[weak];
+    $('.rec b', view).textContent = names[weak];
     $('.rec .r', view).textContent = rec;
     $('#qAgain').addEventListener('click', intro);
     $('#qGo').addEventListener('click', function () {
       $('#f-format').value = pick;
       $('#f-diag').value = lastResult;
       var msg = $('#f-message');
-      if (!msg.value) msg.value = 'Прошёл(а) диагностику. ' + lastResult;
+      if (!msg.value) msg.value = T('quiz.msg', { s: localSummary });
     });
   }
+  function renderQuiz() { if (!view) return; if (phase === 'ask') ask(cur); else if (phase === 'result') finish(); else intro(); }
   if (view) intro();
 
   /* ── Programs → prefill form ── */
@@ -371,7 +372,7 @@
   /* ── Testimonials carousel ── */
   var slides = $('#slides'), dotsBox = $('#dots'), cards = $$('.t-card', slides);
   cards.forEach(function (c, i) {
-    var b = document.createElement('button'); b.setAttribute('aria-label', 'Отзыв ' + (i + 1));
+    var b = document.createElement('button'); b.setAttribute('aria-label', T('dots.aria', { n: i + 1 }));
     b.addEventListener('click', function () { slides.scrollTo({ left: c.offsetLeft - slides.offsetLeft, behavior: 'smooth' }); });
     dotsBox.appendChild(b);
   });
@@ -425,10 +426,10 @@
     ['#f-name', '#f-contact', '#f-format'].forEach(function (s) {
       var f = $(s); if (!f.value.trim()) { f.classList.add('err'); bad = true; }
     });
-    if (bad) { toast('Заполни имя, контакт и формат'); return; }
+    if (bad) { toast(T('toast.fill')); return; }
     if ($('.hp', form).value) return; // honeypot
     var label = sbtn.innerHTML;
-    sbtn.disabled = true; sbtn.textContent = 'Отправляем…';
+    sbtn.disabled = true; sbtn.textContent = T('btn.sending');
     fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
       .then(function (r) {
         if (!r.ok) throw new Error('bad');
@@ -438,34 +439,32 @@
       })
       .catch(function () {
         sbtn.disabled = false; sbtn.innerHTML = label;
-        toast('Не получилось отправить — попробуй ещё раз или напиши в Telegram');
+        toast(T('toast.err'));
       });
   });
 
   /* ── Command palette (Ctrl/⌘ + K, "/") ── */
   var pal = $('#palette'), palIn = $('#palInput'), palList = $('#palList'), palSel = 0, palItems = [];
-  var cmds = [
-    { t: 'Экспертиза', k: 'направления днк процессы горлышки', h: '#pillars' },
-    { t: 'Услуги', k: 'инструменты анализ crm дашборды продажи скрипты', h: '#services' },
-    { t: 'Обо мне', k: 'андрей кто опыт', h: '#about' },
-    { t: 'Как работаем', k: 'процесс этапы шаги', h: '#process' },
-    { t: 'Экспресс-диагностика', k: 'тест квиз проверить', h: '#diagnostic' },
-    { t: 'Программы и цены', k: 'форматы стоимость цена eur', h: '#programs' },
-    { t: 'Отзывы', k: 'клиенты результаты кейсы', h: '#reviews' },
-    { t: 'Вопросы и ответы', k: 'faq', h: '#faq' },
-    { t: 'Оставить заявку', k: 'контакт связаться форма разбор', h: '#contact' },
-    { t: 'Написать в Telegram', k: 'tg телеграм', u: 'https://t.me/mentor_helpstogrow' },
-    { t: 'Сменить тему', k: 'светлая тёмная dark light', fn: function () { themeBtn.click(); } }
+  var CMD_TARGETS = [
+    { h: '#pillars' }, { h: '#services' }, { h: '#about' }, { h: '#process' }, { h: '#diagnostic' }, { h: '#programs' },
+    { h: '#reviews' }, { h: '#faq' }, { h: '#contact' }, { u: 'https://t.me/mentor_helpstogrow' },
+    { fn: function () { themeBtn.click(); } }
   ];
+  function buildCmds() {
+    var titles = TL('pal.titles'), kws = TL('pal.kw');
+    return CMD_TARGETS.map(function (c, i) { return { t: titles[i], k: kws[i], h: c.h, u: c.u, fn: c.fn }; });
+  }
+  var cmds = buildCmds();
   function renderPal() {
     var q = palIn.value.trim().toLowerCase();
     palItems = cmds.filter(function (c) { return !q || (c.t + ' ' + c.k).toLowerCase().indexOf(q) > -1; });
     palSel = 0;
-    palList.innerHTML = palItems.length ? '' : '<li class="pal-empty">Ничего не найдено</li>';
+    palList.innerHTML = palItems.length ? '' : '<li class="pal-empty"></li>';
+    if (!palItems.length) palList.firstChild.textContent = T('pal.empty');
     palItems.forEach(function (c, i) {
       var li = document.createElement('li'); li.className = i === 0 ? 'sel' : '';
       var s = document.createElement('span'); s.textContent = c.t;
-      var m = document.createElement('small'); m.textContent = c.h ? 'раздел' : c.u ? 'ссылка' : 'действие';
+      var m = document.createElement('small'); var types = TL('pal.types'); m.textContent = c.h ? types[0] : c.u ? types[1] : types[2];
       li.appendChild(s); li.appendChild(m);
       li.addEventListener('click', function () { run(c); });
       palList.appendChild(li);
@@ -501,5 +500,12 @@
 
   /* ── Misc ── */
   var y = $('#year'); if (y) y.textContent = new Date().getFullYear();
+  document.addEventListener('htg:lang', function () {
+    renderMarquee();
+    renderQuiz();
+    cmds = buildCmds();
+    if (pal.classList.contains('open')) renderPal();
+    $$('button', dotsBox).forEach(function (b, i) { b.setAttribute('aria-label', T('dots.aria', { n: i + 1 })); });
+  });
   onScroll();
 })();
